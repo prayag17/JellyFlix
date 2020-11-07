@@ -585,13 +585,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .button-flat {
   border-radius: var(--rounding) !important;
 } 
+.section2 .raised {
+  background: rgba(0,0,0,0.65):
+}
 .raised {
-  transition: transform .2s; 
   background:#e50914 !important;
   border-radius: var(--rounding) !important;  
-}
-.raised.emby-button:hover{
-  transform: scale(1.2);
 }
 .navMenuOption-selected {
     background: #e50914 !important;
