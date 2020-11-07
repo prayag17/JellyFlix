@@ -1,3 +1,14 @@
+/*Theming video page*/
+.videoOsdBottom {
+    background: linear-gradient(to top, black 20%, transparent);
+    padding-top: 10em;
+}
+.osdHeader {
+    background: linear-gradient(to bottom, black 20%, transparent) !important;
+}
+.videoOsdBottom .buttons {
+    color: #e50914;
+}
 /*Compact movie poster*/
 .section0 button.itemAction.textActionButton {
     height: 37px !important;
@@ -592,18 +603,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .button-flat:hover {
     color: #e50914;
     transform: scale(1.5);
-}
-.videoOsdBottom {
-    background-color: rgba(0,0,0,.85);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 8px 5px black;
-}
-.osdHeader {
-  background: rgba(0,0,0,0.85)!important;
-  -webkit-backdrop-filter: blur(10px)!important;
-  backdrop-filter: blur(10px)!important;
-  box-shadow: 0px 0px 8px 5px black;
 }
 .listItem.listItem-border:hover {
   border-color: rgba(0,0,0,0) !important;
