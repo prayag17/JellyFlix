@@ -585,7 +585,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .button-flat {
   border-radius: var(--rounding) !important;
 }
-.section2 a.raised.homeLibraryButton.emby-button {
+#indexPage a.raised.homeLibraryButton.emby-button {
     background: rgba(0,0,0,0.4) !important;
 }
 .raised {
