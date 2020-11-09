@@ -10,6 +10,14 @@
     color: #e50914;
 }
 /*Compact movie poster*/
+#userProfilesPage .cardText.cardText-secondary,#userProfilesPage .cardText,
+#mediaLibraryPage .cardText.cardText-secondary,#medialibraryPage .cardText,
+#pluginsPage .cardText.cardText-secondary,#pluginPage .cardText,
+#devicesPage .cardText.cardText-secondary,#devicePage .cardText,
+.dialogContainer .cardText-secondary, {
+    margin-top: 0 !important;
+    background: none;
+}
 .section0 button.itemAction.textActionButton {
     height: 37px !important;
     background: rgba(0, 0, 0, 0);
@@ -53,6 +61,9 @@
 .itemProgressBar {
     background: none !important;
     height: 2.8em;
+}
+#userProfilesPage .smallBackdropCard, #userProfilesPage .squareCard {
+    width: 11% !important;
 }
 
 /*Top Bar Transparent*/
