@@ -10,11 +10,11 @@
     color: #e50914;
 }
 /*Compact movie poster*/
-#userProfilesPage .cardText.cardText-secondary,#userProfilesPage .cardText,
-#mediaLibraryPage .cardText.cardText-secondary,#medialibraryPage .cardText,
-#pluginsPage .cardText.cardText-secondary,#pluginPage .cardText,
-#devicesPage .cardText.cardText-secondary,#devicePage .cardText,
-.dialogContainer .cardText-secondary, {
+#userProfilesPage .cardText.cardText-secondary,#userProfilesPage .cardText, #userProfilesPage .cardText-secondary
+#mediaLibraryPage .cardText.cardText-secondary,#medialibraryPage .cardText, #mediaLibraryPage  .cardText-secondary
+#pluginsPage .cardText.cardText-secondary,#pluginPage .cardText, #pluginsPage .cardText-secondary
+#devicesPage .cardText.cardText-secondary,#devicePage .cardText, #devicesPage .cardText-secondary
+.dialogContainer .cardText-secondary{
     margin-top: 0 !important;
     background: none;
 }
