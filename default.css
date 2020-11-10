@@ -1,3 +1,7 @@
+/*Custom LOGO*/
+.pageTitleWithDefaultLogo {
+    background-image: url(https://i.imgur.com/IVLcRHo.png);
+}
 /*Theming video page*/
 .videoOsdBottom {
     background: linear-gradient(to top, black 20%, transparent);
