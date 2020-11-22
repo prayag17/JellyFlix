@@ -159,6 +159,7 @@ button.emby-tab-button.emby-button.emby-tab-button-active:hover {
 /*Theming Title Page*/
 div#itemBackdrop {
     height: 70% !Important;
+    z-index: -1;
 }
 .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
     height: 14.2em;
@@ -624,11 +625,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 .listItem.listItem-border:hover {
   border-color: rgba(0,0,0,0) !important;
-  transform: scale(1.1);
   background: #3f3f3f;
 }
 .listItem.listItem-border {
-  transition: border-color .2s, transform .2s, background .2s;
+  transition: border-color .2s, background .2s;
   border-color: #e50914 !important;
 }
 div#divRunningTasks:hover {
