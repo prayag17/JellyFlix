@@ -1,6 +1,6 @@
 <div align="center">
 <h1>JellyFlix:Best Netflix Like Skin For Jellyfin Which works great on PC and most of the Mobiles!</h1>
-<h3>Sorry, I will not be able to add more things to this skin for few days but you guys can keep requesting. I am using netflix Sans in this CSS ovride and if I am violating any copyright law then please don't ban it, instead create an issue of it</h3>
+<h3>I am using netflix Sans in this CSS ovride and if I am violating any copyright law then please don't ban it, instead create an issue of it</h3>
 <h4>Use 67% zoom for better experience on PC</h4>  
 </div>
 <h2> To use it, got to Setting ==> Dashboard ==> General and scroll down to custom css and past the following line</h2>
