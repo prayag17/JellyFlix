@@ -1,3 +1,15 @@
+/*cardbox border-radius change*/
+#indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+.emby-scroller button.cardImageContainer.coveredImage.cardContent,
+.childrenItemsContainer button.cardImageContainer.coveredImage.cardContent,
+.nextUpItems button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+.vertical-wrap button.cardImageContainer.coveredImage.cardContent,
+.emby-scroller button.cardImageContainer {
+    border-radius: 5px 5px 0px 0px !important;
+}
+.cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
+    box-shadow: 0 0.0725em 0.29em 0 rgba(0,0,0,.37);
+}
 /*Theming video page*/
 .videoOsdBottom {
     background: linear-gradient(to top, black 20%, transparent);
