@@ -8,7 +8,17 @@
     border-radius: 5px 5px 0px 0px !important;
 }
 .cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
-    box-shadow: 0 0.0725em 0.29em 0 rgba(0,0,0,.37);
+    box-shadow: none;
+}
+.cardBox.cardBox-bottompadded {
+    background: rgba(0,0,0,0.25);
+}
+.itemProgressBar {
+    background: none;
+    height: 928em;
+}
+.emby-checkbox:checked+span+.checkboxOutline, .itemProgressBarForeground {
+    background-color: var(--deftraback) !important;
 }
 /*Theming video page*/
 .videoOsdBottom {
