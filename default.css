@@ -344,7 +344,7 @@ div#itemBackdrop {
     width: 50% !important;
 }
 /*Progress Bar*/
-.emby-checkbox:checked+span+.checkboxOutline, .itemProgressBarForeground {
+.emby-checkbox:checked+span+.checkboxOutline {
     background-color: #e50914 !important;
 }
 /*video Page*/
