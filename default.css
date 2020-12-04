@@ -160,6 +160,7 @@ div#itemBackdrop {
          background-size: 103%;
          background-position: bottom 90% right 0%!important;
          height: 50%!important;
+	 z-index: 0 !important;
    }
    .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
          height: 3em; 
