@@ -171,11 +171,6 @@ div#itemBackdrop {
     .section0 .cardText.cardTextCentered.cardText-first {
           height: 2.5em;
    }
-   .cardText-first {
-           margin-top: -2.8em;
-           margin-bottom: 4.969em;
-           z-index: 999999;
-   }
 }
 @media (max-width: 62.5em)  and (orientation: portrait){
    button.cardOverlayButton.cardOverlayButton-br.itemAction.paper-icon-button-light {
