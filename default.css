@@ -708,12 +708,8 @@ h2 {
   background-color: rgba(0, 164, 220, 0.2);
 }
 .mainDrawer {
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(60px);
-  -moz-backdrop-filter: blur(60px);
-  -o-backdrop-filter: blur(60px);
-  backdrop-filter: blur(60px);
-  box-shadow: 0 0 8px 3px black;
+    box-shadow: none !important;
+    background: linear-gradient(90deg, black, transparent);
 }
 .navMenuOption {
     border-right-color: rgba(0,0,0,0);
