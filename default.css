@@ -571,10 +571,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .navMenuOption-selected {
     background: #e50914 !important;
 }
-.navMenuOption:hover {
-    background: var(--deftraback) !important;
-    transform: scale(1.2);
-}
 .button-flat:hover {
     color: #e50914;
     transform: scale(1.5);
@@ -719,8 +715,15 @@ h2 {
   backdrop-filter: blur(60px);
   box-shadow: 0 0 8px 3px black;
 }
+.navMenuOption {
+    border-right-color: rgba(0,0,0,0);
+    border-right-width: .5em !important;
+    border-right-style: solid;
+    border-radius: 10px !important;
+}
 .navMenuOption:hover {
-  background: rgba(0, 164, 220, 0.2);
+    background: var(--deftraback) !important;
+    border-right-color: #e50914;
 }
 /*Fixing position of tv or movie poster*/
 .detailImageContainer .card {
