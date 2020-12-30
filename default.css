@@ -702,6 +702,7 @@ h2 {
 }
 .cardOverlayContainer {
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px 5px 0px 0px !important;
 }
 /*Theme some dialogues*/
 .actionSheetMenuItem:hover {
