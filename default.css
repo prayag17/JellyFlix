@@ -1,3 +1,8 @@
+/*Epub Reader*/
+body.calibre2{
+    color: white !important;
+    font-family: "Netflix Sans"	!important;
+}
 /*cardbox border-radius change*/
 #indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .emby-scroller button.cardImageContainer.coveredImage.cardContent,
