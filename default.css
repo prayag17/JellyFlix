@@ -1,3 +1,7 @@
+/*Square Cards*/
+#loginPage .squareCard {
+    width: 50% !important;
+}
 /*cardbox border-radius change*/
 #indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .emby-scroller button.cardImageContainer.coveredImage.cardContent,
@@ -306,38 +310,6 @@ div#itemBackdrop {
 }
 .emby-checkbox:checked+span+.checkboxOutline {
     border-color: #e50914 !important;
-}
-/*Making Login User image visible*/
-@media (min-width: 120em)
-.squareCard {
-    width: 50% !important;
-}
-@media (min-width: 100em)
-.squareCard {
-    width: 50% !important;
-}
-@media (min-width: 87.5em)
-.squareCard {
-    width: 50% !important;
-}
-@media (min-width: 75em)
-.squareCard {
-    width: 50% !important;
-}
-@media (min-width: 50em)
-.squareCard {
-    width: 50% !important;
-}
-@media (min-width: 43.75em)
-.squareCard {
-    width: 50% !important;
-}
-@media (min-width: 31.25em)
-.squareCard {
-    width: 50% !important;
-}
-.smallBackdropCard, .squareCard {
-    width: 50% !important;
 }
 /*Progress Bar*/
 .emby-checkbox:checked+span+.checkboxOutline {
