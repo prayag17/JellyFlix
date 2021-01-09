@@ -181,8 +181,6 @@ div#itemBackdrop {
 }
 @media (max-width: 62.5em)  and (orientation: portrait){
    button.cardOverlayButton.cardOverlayButton-br.itemAction.paper-icon-button-light {
-           margin-top: 5em !important;
-           top: 0;
            text-shadow: 0 0 10px black;
            color: white !important; 
    }
