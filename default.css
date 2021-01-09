@@ -1,6 +1,9 @@
-/*Square Cards*/
+/*Square Cards and Portrait Cards*/
 #loginPage .squareCard {
     width: 50% !important;
+}
+.portraitCard {
+    width: 50%;
 }
 /*cardbox border-radius change*/
 #indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
