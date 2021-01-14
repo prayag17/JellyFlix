@@ -10,6 +10,9 @@
     width: 50%;
   }
 }
+.emby-input:focus, .emby-textarea:focus {
+    border-color: #e50914;
+}
 #itemDetailPage button.cardImageContainer.coveredImage.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast {
   border-radius: 5px;
 }
