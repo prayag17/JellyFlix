@@ -700,7 +700,7 @@ h2 {
   border-right-color: rgba(0,0,0,0);
   border-right-width: .5em !important;
   border-right-style: solid;
-  border-radius: 10px !important;
+  border-radius: var(--rounding) !important;
 }
 .navMenuOption:hover {
   background: var(--deftraback) !important;
