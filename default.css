@@ -1,3 +1,8 @@
+/*fieldset*/
+fieldset.verticalSection.verticalSection-extrabottompadding {
+    border-radius: var(--rounding);
+    border-color: #4d4d4d;
+}
 /*Square Cards and Portrait Cards*/
 #loginPage .squareCard {
   width: 50% !important;
