@@ -150,10 +150,10 @@ div#itemBackdrop {
 }
 .detailPageSecondaryContainer {
   margin: 0em;
-  background: black;
+  background: 1D1D1D;
 }
 .detailRibbon {
-  background: linear-gradient(to top, black, transparent);
+  background: linear-gradient(to top, #1D1D1D, transparent);
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: rgba(0,0,0,0.1) !important;
