@@ -271,7 +271,7 @@ div#itemBackdrop {
   }
 
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    font-size: x-small;
+    font-size: smaller;
     height: fit-content;
     overflow: hidden;
   }
@@ -580,6 +580,7 @@ div#divRunningTasks {
 }
 .detailPageContent {
   text-shadow: 0 0 5px black;
+  background: #1D1D1D;  
 }
 select {
   box-shadow: 0 0 6px 0px black !important;
