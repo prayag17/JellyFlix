@@ -150,10 +150,10 @@ div#itemBackdrop {
 }
 .detailPageSecondaryContainer {
   margin: 0em;
-  background: 1D1D1D;
+  background: #141414;
 }
 .detailRibbon {
-  background: linear-gradient(to top, #1D1D1D, transparent);
+  background: linear-gradient(to top, #141414, transparent);
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: rgba(0,0,0,0.1) !important;
@@ -580,7 +580,7 @@ div#divRunningTasks {
 }
 .detailPageContent {
   text-shadow: 0 0 5px black;
-  background: #1D1D1D;  
+  background: #141414;  
 }
 select {
   box-shadow: 0 0 6px 0px black !important;
