@@ -322,7 +322,7 @@ div#itemBackdrop {
 }
 /*Login background with radial gradient overlay to make it look like netflix login*/
 #loginPage {
-  background: radial-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%),url(https://assets.nflxext.com/ffe/siteui/vlv3/9ec8d211-6a2a-460d-9b68-5d6bb1c57ee0/91e8718a-578e-42d4-a2cc-80b72741e518/US-en-20201228-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+  background: radial-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%),url(https://assets.nflxext.com/ffe/siteui/vlv3/70deccb9-9b6c-4be1-b781-18dd1bcd9264/6e69ee62-e75f-4c5a-a56b-2d222564f8f4/US-en-20210301-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
   background-size: cover !important;
 }
 .emby-checkbox:checked+span+.checkboxOutline {
