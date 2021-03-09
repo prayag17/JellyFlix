@@ -142,7 +142,6 @@ button.emby-tab-button.emby-button.emby-tab-button-active:hover {
 /*Theming Title Page*/
 div#itemBackdrop {
   height: 70% !Important;
-  z-index: -1;
 }
 .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
   height: 14.2em;
