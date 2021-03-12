@@ -532,7 +532,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 .cardBox:hover {
   box-shadow: 0px 0px 0px 0px black;
-  transform: scale(1.087);
+  transform: scale(1.08);
 }
 .paper-icon-button-light:hover:not(:disabled) {
   color: #e50914;
