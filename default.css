@@ -1,7 +1,7 @@
 /*fieldset*/
 fieldset.verticalSection.verticalSection-extrabottompadding {
-    border-radius: var(--rounding);
-    border-color: #4d4d4d;
+  border-radius: var(--rounding);
+  border-color: #4d4d4d;
 }
 /*Square Cards and Portrait Cards*/
 #loginPage .squareCard {
@@ -16,7 +16,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   }
 }
 .emby-input:focus, .emby-textarea:focus {
-    border-color: #e50914;
+  border-color: #e50914;
 }
 #itemDetailPage button.cardImageContainer.coveredImage.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast {
   border-radius: 5px;
@@ -280,7 +280,6 @@ div#itemBackdrop {
   .detailPageWrapperContainer {
     border-spacing: 0;
     border-collapse: collapse;
-    margin-top: -64%;
   }
 }
 
@@ -499,13 +498,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 /*fixing Poster Margin*/
 .itemsContainer>.card>.cardBox {
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-top: 16px;
-}
-
-.cardBox-bottompadded {
-  margin-bottom: 16px !important;
+  margin:16px !important;
 }
 .sectionTitleContainer.flex {
   box-shadow: 0 0 black !important;
@@ -579,7 +572,7 @@ div#divRunningTasks {
 }
 .detailPageContent {
   text-shadow: 0 0 5px black;
-  background: #141414;  
+  background: #141414;
 }
 select {
   box-shadow: 0 0 6px 0px black !important;
