@@ -527,8 +527,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 .cardBox {
   border-radius: var(--rounding);
-  transition: box-shadow .2s, transform .2s;
-  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  transition: all .15s;
 }
 .cardBox:hover {
   box-shadow: 0px 0px 0px 0px black;
