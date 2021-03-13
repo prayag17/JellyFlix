@@ -265,6 +265,9 @@ div#itemBackdrop {
 }
 
 @media all and (max-width: 32em) {
+  .primaryImageWrapper>img {
+    border-radius: var(--rounding);
+  }
   .itemBackdrop::after {
     background-color: rgba(0, 0, 0, 0) !important;
   }
