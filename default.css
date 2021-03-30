@@ -812,7 +812,7 @@ h2 {
   background-color: #e50914 !important;
 }
 .listItem-border {
-  border-color: #e50914 !important;
+  border-color: transparent !important;
 }
 .backgroundContainer {
   background-color: #101010;
