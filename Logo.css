@@ -1,13 +1,13 @@
 #itemDetailPage .detailLogo {
   position: absolute;
   left: 33%;
-  top: 10%;
+  top: 53%;
   background-position: 0 !important;
   display:block;
 }
 
 .detailRibbon {
-    margin-top: 1em !important;
+
 }
 
 .layout-mobile .detailRibbon {

@@ -1,3 +1,8 @@
+/*Highlight*/
+::selection{
+  background: #e50914;
+  text-shadow: none;
+}
 /*fieldset*/
 fieldset.verticalSection.verticalSection-extrabottompadding {
   border-radius: var(--rounding);
@@ -48,14 +53,22 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 }
 /*Theming video page*/
 .videoOsdBottom {
-  background: linear-gradient(to top, black 20%, transparent);
-  padding-top: 10em;
+    font-size: 110%;
 }
 .osdHeader {
-  background: linear-gradient(to bottom, black 20%, transparent) !important;
+  background: linear-gradient(180deg,rgba(16,16,16,.75),rgba(16,16,16,0))!important;
 }
-.videoOsdBottom .buttons {
-  color: #e50914;
+.layout-desktop .osdControls {
+    width: 100%;
+}
+.mdl-slider::-webkit-slider-thumb {
+    background: #e50914;
+}
+.mdl-slider-background-upper {
+    background: var(--deftraback);
+}
+.mdl-slider-background-lower {
+    background-color: #e50914;
 }
 /*Top Bar Transparent*/
 #userImagePage,
@@ -141,11 +154,7 @@ button.emby-tab-button.emby-button.emby-tab-button-active:hover {
 
 /*Theming Title Page*/
 div#itemBackdrop {
-  height: 70% !Important;
-}
-.layout-desktop .detailRibbon, .layout-tv .detailRibbon {
-  height: 14.2em;
-  margin-top: -11%;
+  height: 80% !Important;
 }
 .detailPageSecondaryContainer {
   margin: 0em;
@@ -155,7 +164,7 @@ div#itemBackdrop {
   background: linear-gradient(to top, #141414, transparent);
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
-  background: rgba(0,0,0,0.1) !important;
+  background: rgba(20,20,20,0.45) !important;
 }
 .itemName {
   font-size: 3em !important;
@@ -216,18 +225,10 @@ div#itemBackdrop {
   .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
     margin-bottom: auto;
   }
-  span.material-icons.detailButton-icon.favorite {
-    color: #e50914;
-    transform: scale(1.3);
-  }
 }
 @media all and (min-width: 32em) and (max-width: 100em) and (orientation: landscape){
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
     margin-top: -13em;
-  }
-  .headerButton {
-    color: #e50914;
-    background: #2020208c;
   }
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
     margin-top: -15em;
