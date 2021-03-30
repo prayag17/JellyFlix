@@ -25,42 +25,39 @@
 <div class="imagesCont">
   <div class="Login">
     <h3 align="center">Login</h3>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/LoginUserSel.png?raw=true">
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/LoginMan.png?raw=true">  
+    <img src="https://prayag17.github.io/JellyFlix/img/login.jpg">
   </div>
   <div class="home">
     <h3 align="center">Home Page</h3>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/Home.png?raw=true">
+    <img src="https://prayag17.github.io/JellyFlix/img/Home.jpg">
   </div>  
   <div class="lib">
     <h3 align="center">Library</h3>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/LibPage.png?raw=true">
-    <h5>Mobile</h5>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/LibPage-Mobile.png?raw=true">
+    <img src="https://prayag17.github.io/JellyFlix/img/Movies.jpg">
+    <img src="https://prayag17.github.io/JellyFlix/img/TV%20Shows.jpg">
+    <img src="https://prayag17.github.io/JellyFlix/img/Collections.jpg">
   </div>
   <div class="titleMov">
     <h3 align="center">Movie Title Page</h3>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/TitlePage.png?raw=true">
-    <h5>Mobile</h5>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/TitlePage-Mobile.png?raw=true">
+    <img src="https://prayag17.github.io/JellySkin/img/Title%20Page-Movie.jpg">
   </div>
   <div class="titleTv">
     <h3 align="center">TV Show Title page</h3>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/TV-TitlePage.png?raw=true">
-    <h5>Mobile</h5>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/TV-TitlePage-Mobile.png?raw=true">
-  </div>   
-  <div class="Epi">
-    <h3 align="center">Episode List</h3>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/TVEpi-TitlePage.png?raw=true">
-    <h5>Mobile</h5>
-    <img src="https://github.com/prayag17/JellyFlix/blob/main/Public%20Ver%201/TVEpi-TitlePage-Mobile.png?raw=true">
+    <img src="https://prayag17.github.io/JellySkin/img/Title%20Page-TV.jpg">
+  </div>
+  <div class="dia">
+  <h5>Dialogs</h5>
+  <img src="https://prayag17.github.io/JellySkin/img/Menu.jpg">
+  <img src="https://prayag17.github.io/JellySkin/img/Dialog-1.jpg">
+  <img src="https://prayag17.github.io/JellySkin/img/Dialog-2.jpg">
+  <img src="https://prayag17.github.io/JellySkin/img/Dialog-3.jpg">
   </div>
 </div>
 <br>
+<br>
 <div class="note">
   <h2>Note: If you want any things to be changed/added to this skin create and issue with 'Feature Request:' in front of it and I also want to make this skin to be supported by most of the devices, so create an issue if your device doesn't work properly with it. Please provide me the name of your device with it's type in this format-<br></h2>
-  
+
   ```
     Device-name: Your name
     type: Mobile/TV (Laptop are all supported, use 67% zoom)
