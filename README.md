@@ -39,18 +39,18 @@
   </div>
   <div class="titleMov">
     <h3 align="center">Movie Title Page</h3>
-    <img src="https://prayag17.github.io/JellySkin/img/Title%20Page-Movie.jpg">
+    <img src="https://prayag17.github.io/JellyFlix/img/Title%20Page-Movie.jpg">
   </div>
   <div class="titleTv">
     <h3 align="center">TV Show Title page</h3>
-    <img src="https://prayag17.github.io/JellySkin/img/Title%20Page-TV.jpg">
+    <img src="https://prayag17.github.io/JellyFlix/img/Title%20Page-TV.jpg">
   </div>
   <div class="dia">
   <h3 align="center">Dialogs</h5>
-  <img src="https://prayag17.github.io/JellySkin/img/Menu.jpg">
-  <img src="https://prayag17.github.io/JellySkin/img/Dialog-1.jpg">
-  <img src="https://prayag17.github.io/JellySkin/img/Dialog-2.jpg">
-  <img src="https://prayag17.github.io/JellySkin/img/Dialog-3.jpg">
+  <img src="https://prayag17.github.io/JellyFlix/img/Menu.jpg">
+  <img src="https://prayag17.github.io/JellyFlix/img/Dialog-1.jpg">
+  <img src="https://prayag17.github.io/JellyFlix/img/Dialog-2.jpg">
+  <img src="https://prayag17.github.io/JellyFlix/img/Dialog-3.jpg">
   </div>
 </div>
 <br>
