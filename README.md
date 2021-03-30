@@ -25,7 +25,7 @@
 <div class="imagesCont">
   <div class="Login">
     <h3 align="center">Login</h3>
-    <img src="https://prayag17.github.io/JellyFlix/img/login.jpg">
+    <img src="https://prayag17.github.io/JellyFlix/img/Login.jpg">
   </div>
   <div class="home">
     <h3 align="center">Home Page</h3>
