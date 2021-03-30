@@ -46,7 +46,7 @@
     <img src="https://prayag17.github.io/JellySkin/img/Title%20Page-TV.jpg">
   </div>
   <div class="dia">
-  <h5>Dialogs</h5>
+  <h3 align="center">Dialogs</h5>
   <img src="https://prayag17.github.io/JellySkin/img/Menu.jpg">
   <img src="https://prayag17.github.io/JellySkin/img/Dialog-1.jpg">
   <img src="https://prayag17.github.io/JellySkin/img/Dialog-2.jpg">
