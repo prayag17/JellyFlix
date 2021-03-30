@@ -532,9 +532,17 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-radius: var(--rounding);
   transition: all .15s;
 }
-.cardBox:hover {
-  box-shadow: 0px 0px 0px 0px black;
-  transform: scale(1.08);
+.card:hover .cardBox:hover {
+  box-shadow: 0px 3px 9px 0px black;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.75);
+}
+.cardImageContainer {
+  background-size: 110%;
+  transition: all .15s;
+}
+.card:hover .cardImageContainer {
+  background-size: 130%;
 }
 .paper-icon-button-light:hover:not(:disabled) {
   color: #e50914;
@@ -851,3 +859,4 @@ h2 {
     -webkit-backdrop-filter: blur(90px);
     box-shadow: 0 0 8px black;
   }
+}
