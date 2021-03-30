@@ -155,6 +155,7 @@ button.emby-tab-button.emby-button.emby-tab-button-active:hover {
 /*Theming Title Page*/
 div#itemBackdrop {
   height: 80% !Important;
+  z-index: -1;
 }
 .detailPageSecondaryContainer {
   margin: 0em;
