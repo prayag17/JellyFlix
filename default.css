@@ -53,22 +53,22 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 }
 /*Theming video page*/
 .videoOsdBottom {
-    font-size: 110%;
+  font-size: 110%;
 }
 .osdHeader {
   background: linear-gradient(180deg,rgba(16,16,16,.75),rgba(16,16,16,0))!important;
 }
 .layout-desktop .osdControls {
-    width: 100%;
+  width: 100%;
 }
 .mdl-slider::-webkit-slider-thumb {
-    background: #e50914;
+  background: #e50914;
 }
 .mdl-slider-background-upper {
-    background: var(--deftraback);
+  background: var(--deftraback);
 }
 .mdl-slider-background-lower {
-    background-color: #e50914;
+  background-color: #e50914;
 }
 /*Top Bar Transparent*/
 #userImagePage,
@@ -163,12 +163,14 @@ div#itemBackdrop {
 }
 .detailRibbon {
   background: linear-gradient(to top, #141414, transparent);
+  height: fit-content !important;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: rgba(20,20,20,0.45) !important;
 }
-.itemName {
-  font-size: 3em !important;
+.itemName.parentNameLast {
+  margin: 0;
+  font-size: 3rem;
 }
 /* Center the mouseover buttons */
 #castContent .cardOverlayButton-br {
