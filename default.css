@@ -1,3 +1,10 @@
+/*Variables*/
+:root {
+  --deftraback: rgba(229, 9, 20, .2) !important;
+  --rounding: 5px;
+  --accent:  #E50914;
+}
+
 /*Highlight*/
 ::selection{
   background: var(--accent);
@@ -357,12 +364,6 @@ div#itemBackdrop {
 }
 ::-webkit-scrollbar-track-piece {
   background-color: rgba(0,0,0,0) !important;
-}
-/*Variables*/
-:root {
-  --deftraback: rgba(229, 9, 20, .2) !important;
-  --rounding: 5px;
-  --accent:  var(--accent);
 }
 
 .button-link {
