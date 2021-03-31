@@ -1,6 +1,6 @@
 /*Highlight*/
 ::selection{
-  background: #e50914;
+  background: var(--accent);
   text-shadow: none;
 }
 /*fieldset*/
@@ -21,7 +21,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   }
 }
 .emby-input:focus, .emby-textarea:focus {
-  border-color: #e50914;
+  border-color: var(--accent);
 }
 #itemDetailPage button.cardImageContainer.coveredImage.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast {
   border-radius: 5px;
@@ -62,13 +62,13 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   width: 100%;
 }
 .mdl-slider::-webkit-slider-thumb {
-  background: #e50914;
+  background: var(--accent);
 }
 .mdl-slider-background-upper {
   background: var(--deftraback);
 }
 .mdl-slider-background-lower {
-  background-color: #e50914;
+  background-color: var(--accent);
 }
 /*Top Bar Transparent*/
 #userImagePage,
@@ -138,18 +138,18 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 }
 .countIndicator, .fullSyncIndicator, .playedIndicator {
   background: #ffffffad;
-  color: #e50914;
+  color: var(--accent);
 }
 .playedIndicator {
-  background: #e50914;
+  background: var(--accent);
   color: white;
   box-shadow: 0 0 15px -2px black;
 }
 button.emby-tab-button.emby-button.emby-tab-button-active:hover {
-  color: #e50914 !important;
+  color: var(--accent) !important;
 }
 .emby-tab-button.show-focus:focus, .emby-tab-button:hover {
-  color: #e50914 !important;
+  color: var(--accent) !important;
 }
 
 /*Theming Title Page*/
@@ -249,7 +249,7 @@ div#itemBackdrop {
     background-color: rgba(0, 0, 0, 0) !important;
   }
   span.material-icons.detailButton-icon.favorite {
-    color: #e50914;
+    color: var(--accent);
     transform: scale(1.3);
   }
   div#itemBackdrop{
@@ -331,22 +331,22 @@ div#itemBackdrop {
   background-size: cover !important;
 }
 .emby-checkbox:checked+span+.checkboxOutline {
-  border-color: #e50914 !important;
+  border-color: var(--accent) !important;
 }
 /*Progress Bar*/
 .emby-checkbox:checked+span+.checkboxOutline {
-  background-color: #e50914 !important;
+  background-color: var(--accent) !important;
 }
 /*video Page*/
 .mdl-slider-background-lower {
-  background-color: #e50914 1important;
+  background-color: var(--accent) 1important;
 }
 .sliderBubble {
-  background: #e50914 !important;
+  background: var(--accent) !important;
 }
 /*Scroll Bar theme*/
 ::-webkit-scrollbar-thumb {
-  background: #e50914 !important;
+  background: var(--accent) !important;
 }
 .page {
   padding-bottom: 0 !important;
@@ -361,9 +361,8 @@ div#itemBackdrop {
 /*Variables*/
 :root {
   --deftraback: rgba(229, 9, 20, .2) !important;
-}
-:root {
   --rounding: 5px;
+  --accent:  var(--accent);
 }
 
 .button-link {
@@ -513,7 +512,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 /*Hover items*/
 .emby-input, .emby-textarea {
   color: inherit;
-  border: .07em solid #e50914;
+  border: .07em solid var(--accent);
   border-radius:  var(--rounding);
   box-shadow: 0 0 8px 0px black !important;
   background: rgba(0,0,0,0.2) !important;
@@ -522,7 +521,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   text-shadow: 0 0 5px black;
 }
 .emby-select-withcolor  {
-  border: .07em solid #e50914;
+  border: .07em solid var(--accent);
 }
 .playedIndicator,
 .countIndicator {
@@ -550,7 +549,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background-size: 130%;
 }
 .paper-icon-button-light:hover:not(:disabled) {
-  color: #e50914;
+  color: var(--accent);
   background-color: #2020208c;
   box-shadow: 0 0 15px -2px black;
 }
@@ -561,14 +560,14 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: rgba(0,0,0,0.4) !important;
 }
 .raised {
-  background:#e50914 !important;
+  background:var(--accent) !important;
   border-radius: var(--rounding) !important;
 }
 .navMenuOption-selected {
-  background: #e50914 !important;
+  background: var(--accent) !important;
 }
 .button-flat:hover {
-  color: #e50914;
+  color: var(--accent);
   transform: scale(1.5);
 }
 .listItem.listItem-border:hover {
@@ -577,7 +576,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 .listItem.listItem-border {
   transition: border-color .2s, background .2s;
-  border-color: #e50914 !important;
+  border-color: var(--accent) !important;
 }
 div#divRunningTasks:hover {
   transform: scale(1.1);
@@ -681,7 +680,7 @@ h2 {
   background-color:rgba(0, 0, 0, 0);
 }
 .playedIndicator {
-  background: #e50914;
+  background: var(--accent);
 }
 .upNextDialog {
   backdrop-filter: blur(15px);
@@ -717,7 +716,7 @@ h2 {
 }
 .navMenuOption:hover {
   background: var(--deftraback) !important;
-  border-right-color: #e50914;
+  border-right-color: var(--accent);
 }
 /*Fixing position of tv or movie poster*/
 .detailImageContainer .card {
@@ -813,7 +812,7 @@ h2 {
   border-radius: 5px !important;
 }
 .listItemIcon:not(.listItemIcon-transparent) {
-  background-color: #e50914 !important;
+  background-color: var(--accent) !important;
 }
 .listItem-border {
   border-color: transparent !important;
@@ -822,7 +821,7 @@ h2 {
   background-color: #101010;
 }
 .raised {
-  background: #e50914;
+  background: var(--accent);
 }
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
   border-radius: var(--rounding) !important;
