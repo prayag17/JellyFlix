@@ -543,7 +543,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: rgba(0,0,0,0.75);
 }
 .cardImageContainer {
-  background-size: 110%;
+  background-size: 105%;
   transition: all .15s;
 }
 .card:hover .cardImageContainer {
