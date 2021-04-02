@@ -551,6 +551,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .card:hover .cardImageContainer {
   background-size: 130%;
 }
+.detailImageContainer .card:hover .cardImageContainer{
+  background-size: 105%;
+}
 .paper-icon-button-light:hover:not(:disabled) {
   color: var(--accent);
   background-color: #2020208c;
@@ -569,7 +572,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .navMenuOption-selected {
   background: var(--accent) !important;
 }
-.button-flat:hover {
+#itemDetailPage .button-flat:hover {
   color: var(--accent);
   transform: scale(1.5);
 }
