@@ -171,6 +171,8 @@ div#itemBackdrop {
 .detailRibbon {
   background: linear-gradient(to top, #141414, transparent);
   height: fit-content !important;
+  font-size: 120%;
+  padding-bottom: 1rem;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: rgba(20,20,20,0.45) !important;
