@@ -307,15 +307,18 @@ div#itemBackdrop {
   z-index: 1;
   margin-top: 29rem;
 }
+
 .layout-mobile .primaryImageWrapper > img {
   min-width: 100%;
-  min-height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   overflow: visible;
+  height: 45rem;
   z-index: -1;
+  max-height: unset;
 }
+
 .primaryImageWrapper::before {
   content: "";
   display: block;
@@ -361,10 +364,6 @@ div#itemBackdrop {
     width: -webkit-fill-available !important;
     height: fit-content !important;
   }
-}
-/*Narrow the login form*/
-#loginPage .readOnlyContent, #loginPage form {
-  max-width: 22em;
 }
 
 /*Hide "please login" text, margin is to prevent login form moving too far up*/
