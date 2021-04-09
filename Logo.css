@@ -7,7 +7,7 @@
 }
 
 .layout-mobile .detailRibbon {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .layout-mobile .detailLogo {
@@ -23,13 +23,18 @@
 }
 
 .hide+.detailPageWrapperContainer .itemName {
-    display: block !important;
+  display: block !important;
 }
 
 .itemName {
-    margin: .5em 0 !important;
+  margin: .5em 0 !important;
 }
 
-.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-  display: block;
+.layout-mobile #itemDetailPage .detailLogo {
+  z-index: 1;
+  width: 100%;
+  background-position: 50% !important;
+  left: 0;
+  top: 37%;
+  height: 20%;
 }
