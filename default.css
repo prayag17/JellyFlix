@@ -68,9 +68,6 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 .layout-desktop .osdControls {
   max-width: 100%;
 }
-.mdl-slider-background-lower {
-    background-color: var(--accent);
-}
 .mdl-slider::-webkit-slider-thumb {
   background: var(--accent);
 }
@@ -388,10 +385,11 @@ div#itemBackdrop {
 }
 /*video Page*/
 .mdl-slider-background-lower {
-  background-color: var(--accent) 1important;
+  background-color: var(--accent) !important;
 }
 .sliderBubble {
-  background: var(--accent) !important;
+  background: var(--deftraback) !important;
+  border-radius: 10px;
 }
 /*Scroll Bar theme*/
 ::-webkit-scrollbar-thumb {
