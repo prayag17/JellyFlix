@@ -68,14 +68,11 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 .layout-desktop .osdControls {
   max-width: 100%;
 }
+.mdl-slider-background-lower {
+    background-color: var(--accent);
+}
 .mdl-slider::-webkit-slider-thumb {
   background: var(--accent);
-}
-.mdl-slider-background-upper {
-  background: var(--deftraback);
-}
-.mdl-slider-background-lower {
-  background-color: var(--accent);
 }
 /*Top Bar Transparent*/
 #userImagePage,
