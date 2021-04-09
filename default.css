@@ -66,7 +66,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   background: linear-gradient(180deg,rgba(16,16,16,.75),rgba(16,16,16,0))!important;
 }
 .layout-desktop .osdControls {
-  width: 100%;
+  max-width: 100%;
 }
 .mdl-slider::-webkit-slider-thumb {
   background: var(--accent);
