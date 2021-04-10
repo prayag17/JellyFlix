@@ -310,11 +310,12 @@ div#itemBackdrop {
 
 .layout-mobile .primaryImageWrapper > img {
   min-width: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   overflow: visible;
-  height: 45rem;
+  height: 40rem;
+  filter: brightness(65%);
   z-index: -1;
   max-height: unset;
 }
@@ -322,7 +323,7 @@ div#itemBackdrop {
 .primaryImageWrapper::before {
   content: "";
   display: block;
-  background: linear-gradient(to top,#141414 23%, transparent);
+  background: linear-gradient(to top,#141414 40%, transparent);
   height: 100%;
   width: 100%;
   left: 0;
