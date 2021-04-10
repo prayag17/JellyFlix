@@ -184,6 +184,45 @@ div#itemBackdrop {
 #castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {
   margin:auto;
 }
+
+@media (max-width: 456px){
+  .layout-mobile #itemDetailPage .detailLogo {
+    z-index: 1;
+    width: 90%;
+    background-position: 50% !important;
+    left: 50%;
+    top: 37%;
+    transform: translateX(-50%);
+    height: 30%;
+  }
+  .layout-mobile .infoText {
+    z-index: 1;
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 321px){
+  .layout-mobile #itemDetailPage .detailLogo {
+    height: 25%;
+  }
+  .layout-mobile .mainDetailButtons, .layout-mobile .infoText {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 769px) and (min-width: 425px){
+  .layout-mobile .infoText {
+    margin-top: 24rem;
+  }
+  .primaryImageWrapper::before {
+    background: linear-gradient(to top,#141414 20%, transparent);
+  }
+  .layout-mobile #itemDetailPage .detailLogo {
+    height: 35%;
+    top: 62%;
+  }
+}
+
 @media (max-width: 62.5em) {
   .layout-desktop .detailPageWrapperContainer, .layout-tv .detailPageWrapperContainer {
     margin-top: -13em !Important;
@@ -314,7 +353,6 @@ div#itemBackdrop {
   left: 0;
   top: 0;
   overflow: visible;
-  height: 40rem;
   filter: brightness(65%);
   z-index: -1;
   max-height: unset;
