@@ -794,14 +794,7 @@ h2 {
   text-shadow: 0 0 5px black;
 }
 .tmla-mask {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   background-color: rgba(0,0,0,0);
-}
-.dialogBackdropOpened {
-  opacity: 1 !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 .dialogBackdrop {
   background-color: #0000;
@@ -861,7 +854,7 @@ h2 {
   -webkit-backdrop-filter: blur(60px) !important;
   -moz-backdrop-filter: blur (60px) !important;
   -o-backdrop-filter: blur(60px) !important;
-  box-shadow: 0 0 20px 4px black;
+  box-shadow: 0 0 0 2000vw rgb(0 0 0 / 45%), 0 0 20px 4px black;
 }
 /* Top menu transparency */
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
@@ -897,9 +890,10 @@ h2 {
 .actionSheetMenuItem:hover {
   background-color: rgba(0, 164, 220, 0.2);
 }
-.mainDrawer {
-  box-shadow: none !important;
-  background: linear-gradient(90deg, black, transparent);
+.mainDrawer.drawer-open {
+    box-shadow: none !important;
+    padding-right: 50%;
+    background: linear-gradient(90deg, black 15%, transparent);
 }
 .navMenuOption {
   border-right-color: rgba(0,0,0,0);
