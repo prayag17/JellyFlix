@@ -980,6 +980,9 @@ h2 {
 .card[data-type=CollectionFolder] .cardText {
   height: 3rem;
 }
+.defaultCardBackground {
+  background: var(--deftraback) !important;
+}
 .listItemImageButton.itemAction.paper-icon-button-light {
   opacity: 0;
   color: var(--accent);
