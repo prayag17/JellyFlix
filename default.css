@@ -1041,7 +1041,8 @@ h2 {
   border-radius: 5px !important;
 }
 .listItemIcon:not(.listItemIcon-transparent) {
-  background-color: var(--accent) !important;
+  background-color: transparent !important;
+  color: var(--accent);
 }
 .listItem-border {
   border-color: transparent !important;
