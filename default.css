@@ -983,6 +983,9 @@ h2 {
 .defaultCardBackground {
   background: var(--deftraback) !important;
 }
+#itemDetailPage::-webkit-scrollbar-track-piece {
+  background: #181818;
+}
 .listItemImageButton.itemAction.paper-icon-button-light {
   opacity: 0;
   color: var(--accent);
