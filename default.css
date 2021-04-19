@@ -977,6 +977,9 @@ h2 {
 .listItemBody {
   padding: 0 5px;
 }
+.card[data-type=CollectionFolder] .cardText {
+  height: 3rem;
+}
 .listItemImageButton.itemAction.paper-icon-button-light {
   opacity: 0;
   color: var(--accent);
