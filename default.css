@@ -683,7 +683,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 .listItem.listItem-border {
   transition: border-color .2s, background .2s;
-  border-color: var(--accent) !important;
 }
 div#divRunningTasks:hover {
   transform: scale(1.1);
