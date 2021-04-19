@@ -974,7 +974,7 @@ h2 {
 .layout-mobile .listItem-bottomoverview {
   padding: 0 10px;
 }
-.listItemBody {
+.listItemBody.itemAction {
   padding: 0 5px;
 }
 .card[data-type=CollectionFolder] .cardText {
