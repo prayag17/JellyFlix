@@ -155,18 +155,49 @@ button.emby-tab-button.emby-button.emby-tab-button-active:hover {
 
 /*Theming Title Page*/
 div#itemBackdrop {
-  height: 80% !Important;
-  z-index: -1;
+  height: 100% !Important;
+  z-index: 0;
+  position: absolute;
+  background-position: top right;
+  width: 100%;
+  background-size: contain;
+  background-attachment: scroll;
 }
 .detailPageSecondaryContainer {
-  margin: 0em;
-  background: #141414;
+  margin: 0em !important;
+  background: transparent;
 }
-.detailRibbon {
-  background: linear-gradient(to top, #141414, transparent);
-  height: fit-content !important;
-  font-size: 120%;
-  padding-bottom: 1rem;
+
+div#itemDetailPage {
+  background: #181818;
+}
+.detailPagePrimaryContent {
+  position: relative;
+  width: 50%;
+  padding-left: 1rem;
+  background: transparent;
+  padding-bottom: 5rem;
+  min-height: 26rem;
+  height: fit-content;
+}
+.layout-mobile .detailPagePrimaryContent {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+}
+#itemDetailPage .itemExternalLinks {
+  margin-top: 0 !important;
+}
+#itemDetailPage .detailVerticalSection {
+  background: #181818;
+  padding-left: 1rem;
+  width: calc(100% - 1rem);
+  margin-left: 0;
+}
+.layout-mobile #itemDetailPage .detailVerticalSection {
+  background: transparent;
+  width: 100%;
+  padding: 0;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: rgba(20,20,20,0.45) !important;
@@ -176,25 +207,11 @@ div#itemBackdrop {
   font-size: 3rem;
 }
 /* Center the mouseover buttons */
-#castContent .cardOverlayButton-br {
-  bottom: 4%;
-  right: 15%;
-  width: 70%;
-}
 #castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {
   margin:auto;
 }
 
 @media (max-width: 456px){
-  .layout-mobile #itemDetailPage .detailLogo {
-    z-index: 1;
-    width: 90%;
-    background-position: 50% !important;
-    left: 50%;
-    top: 37%;
-    transform: translateX(-50%);
-    height: 30%;
-  }
   .layout-mobile .infoText {
     z-index: 1;
     margin-top: 15rem;
@@ -202,9 +219,6 @@ div#itemBackdrop {
 }
 
 @media (max-width: 321px){
-  .layout-mobile #itemDetailPage .detailLogo {
-    height: 25%;
-  }
   .layout-mobile .mainDetailButtons, .layout-mobile .infoText {
     font-size: 80%;
   }
@@ -217,24 +231,14 @@ div#itemBackdrop {
   .primaryImageWrapper::before {
     background: linear-gradient(to top,#141414 20%, transparent);
   }
-  .layout-mobile #itemDetailPage .detailLogo {
-    height: 35%;
-    top: 62%;
-  }
 }
 
 @media (max-width: 62.5em) {
-  .layout-desktop .detailPageWrapperContainer, .layout-tv .detailPageWrapperContainer {
-    margin-top: -13em !Important;
-  }
   div#itemBackdrop{
     background-size: 103%;
     background-position: bottom 90% right 0%!important;
     height: 50%!important;
     z-index: 0 !important;
-  }
-  .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
-    height: 3em;
   }
   .detailPageSecondaryContainer {
     margin-top: -0.5px;
@@ -262,23 +266,33 @@ div#itemBackdrop {
   .itemBackdrop::after {
     background-color: rgba(0, 0, 0, 0) !important;
   }
-  .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
-    margin-bottom: auto;
-  }
 }
+
 @media all and (min-width: 32em) and (max-width: 100em) and (orientation: landscape){
-  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    margin-top: -13em;
-  }
-  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    margin-top: -15em;
-    font-size: 70%;
-  }
   div#itemBackdrop {
     height: 90%!important;
   }
   .layout-mobile .detailPageSecondaryContainer {
     margin: 0;
+  }
+  .detailPagePrimaryContent {
+    min-height: 12rem;
+    height: fit-content;
+    width: 55%;
+  }
+  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+    margin-top: 0;
+    padding-top: 15rem !important;
+  }
+}
+@media (max-height: 816px) {
+  .layout-mobile .primaryImageWrapper::before {
+    background: linear-gradient(to top,#181818 35%, transparent);
+  }
+}
+@media (max-height: 641px){
+  .layout-mobile #itemDetailPage .detailLogo {
+    top: 53%;
   }
 }
 @media all and (min-width: 32em) and (max-width: 100em) and (orientation: portrait){
@@ -288,11 +302,6 @@ div#itemBackdrop {
   span.material-icons.detailButton-icon.favorite {
     color: var(--accent);
     transform: scale(1.3);
-  }
-  div#itemBackdrop{
-    background-size: 103%;
-    background-position: bottom 90% right 0%!important;
-    height: 50%!important;
   }
   .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
     height: 3em;
@@ -627,9 +636,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .card:hover .cardImageContainer {
   background-size: 130%;
 }
-.detailImageContainer .card:hover .cardImageContainer{
-  background-size: 105%;
-}
 .paper-icon-button-light:hover:not(:disabled) {
   color: var(--accent);
   background-color: #2020208c;
@@ -638,12 +644,31 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .button-flat {
   border-radius: var(--rounding) !important;
 }
+#indexPage a.raised.homeLibraryButton.emby-button:hover {
+  border-radius: 10px !important;
+  box-shadow: 0px 3px 9px black;
+  background: rgba(0,0,0,0.75) !important;
+}
 #indexPage a.raised.homeLibraryButton.emby-button {
-  background: rgba(0,0,0,0.4) !important;
+  background: rgba(0,0,0,0.25) !important;
+  box-shadow: 0 0 9px black;
+  transition: all .2s;
 }
 .raised {
   background:var(--accent) !important;
   border-radius: var(--rounding) !important;
+}
+.mediaInfoItem {
+  position: relative;
+}
+.mediaInfoItem::after {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #7c7c7cee;
+  position: absolute;
+  right: -12px;
+  border-radius: 10px;
 }
 .navMenuOption-selected {
   background: var(--accent) !important;
@@ -667,8 +692,93 @@ div#divRunningTasks {
   transition: transform .2s, background .2s;
 }
 .detailPageContent {
-  text-shadow: 0 0 5px black;
-  background: #141414;
+  text-shadow: none;
+  background: #181818;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0 !important;
+}
+.detailLogo{
+  display: none;
+}
+.layout-mobile .detailPageContent {
+  padding-right: 5% !Important;
+  background: #181818;
+}
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
+  background: linear-gradient(90deg,#181818 30%,rgba(15,23,30,0)), linear-gradient(0deg,#181818 3%,rgba(15,23,30,0) 50%) !important;
+}
+.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
+  position: relative;
+  top: 0;
+  padding-left: 1rem;
+  width: Fit-content !important;
+  background: transparent;
+  padding-top: 23rem;
+  font-size: 20px;
+}
+.detailImageContainer .card {
+  display: none;
+}
+.card[data-type=Actor] .cardBox {
+  background: none;
+  position: relative;
+}
+
+.card[data-type=Actor] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
+}
+
+.card[data-type=Actor] .cardText {
+  position: absolute;
+  background: transparent !important;
+}
+
+.card[data-type=Actor] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0,0,0,0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
+}
+
+.card[data-type=Actor] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.card[data-type=Actor] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
+}
+.layout-mobile .card[data-type=Actor] .cardText-first {
+  color: white !important;
+}
+.card[data-type=Actor] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: 3rem;
+}
+.card[data-type=Actor] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23% !important;
+  right: 0 !important;
+}
+.card[data-type=Actor] .cardPadder {
+  background: none;
+}
+.card[data-type=Actor] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 select {
   box-shadow: 0 0 6px 0px black !important;
@@ -718,12 +828,13 @@ h2 {
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 .backdropImage {
-  filter: blur(50px) saturate(155%) contrast(130%) brightness(45%);
+  filter: blur(25px) saturate(135%) contrast(110%) brightness(35%);
 }
 .backgroundContainer.withBackdrop {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(24,24,24,1);
   background-image: url(https://i.imgur.com/REuCzPK.png) !important;
-  opacity: .4;
+  opacity: .5;
+  z-index: -1;
 }
 /*Rounded corners and square hover buttons*/
 .cardContent-button,
@@ -800,45 +911,79 @@ h2 {
   background: var(--deftraback) !important;
   border-right-color: var(--accent);
 }
-/*Fixing position of tv or movie poster*/
-.detailImageContainer .card {
-  position:fixed;
+/*Episode cards*/
+#itemDetailPage .vertical-list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 0 6px !important;
+  height: fit-content;
+  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  margin: -6px;
+  width: calc(100% - 6px);
 }
-/*Size episode preview images in a more compact way*/
-.listItemImageButton-icon {
+.listItem-withContentWrapper:hover .listItemImageButton.itemAction.paper-icon-button-light {
+  opacity: 100%;
+}
+@media (max-width: 901px){
+  #itemDetailPage .vertical-list {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+.listItem-withContentWrapper {
+  transition: none;
+  height: fit-content;
+  max-width: 100%;
+  margin: 6px;
+  border-radius: var(--rounding);
+  overflow: hidden;
   padding: 0;
+  overflow: hidden;
+}
+.listItem-withContentWrapper:hover{
+  background: transparent;
+}
+.listItem-content {
+  height: 100%;
+}
+.listItem-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.listItemImage.listItemImage-large.itemAction.lazy {
+  height: 14rem;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+}
+
+.layout-mobile #itemDetailPage .vertical-list {
+  grid-template-columns: 100%;
 }
 .secondary.listItem-overview.listItemBodyText {
-  height: 61px;
-  margin: 0;
+  height: fit-content;
 }
-.listItemImageButton {
-  margin: auto;
-  font-size: 1.6em !important;
+.layout-mobile .listItem-bottomoverview {
+  padding: 0 10px;
 }
-@media all and (min-width: 100em){
-  .listItemImage.listItemImage-large.itemAction.lazy {
-    height: 110px;
-  }
-  .listItem-content {
-    height: 115px;
-  }
-  .secondary.listItem-overview.listItemBodyText {
-    height: 4em;
-    margin: 0;
-  }
+.listItemBody {
+  padding: 0 5px;
 }
-@media all and (max-width: 100em){
-  .listItemImage.listItemImage-large.itemAction.lazy {
-    height: 80px;
-  }
-  .listItem-content {
-    height: 85px;
-  }
-  .secondary.listItem-overview.listItemBodyText {
-    height: 2.5em;
-    margin: 0;
-  }
+.listItemImageButton.itemAction.paper-icon-button-light {
+  opacity: 0;
+  color: var(--accent);
+  transition: all .2s;
+}
+.layout-mobile .listItemImageButton.itemAction.paper-icon-button-light{
+  opacity: 100% !important;
 }
 /* My Media Styling */
 .section0 button.itemAction.textActionButton {
