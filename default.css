@@ -420,7 +420,7 @@ div#itemDetailPage {
 }
 /*Login background with radial gradient overlay to make it look like netflix login*/
 #loginPage {
-  background: radial-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%),url(https://assets.nflxext.com/ffe/siteui/vlv3/70deccb9-9b6c-4be1-b781-18dd1bcd9264/6e69ee62-e75f-4c5a-a56b-2d222564f8f4/US-en-20210301-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+  background:linear-gradient(to top, rgba(0,0,0,.75), transparent 20%),linear-gradient(to bottom, rgba(0,0,0,.75), transparent 20%),linear-gradient(to left, rgba(0,0,0,.75), transparent 20%),linear-gradient(to right, rgba(0,0,0,.75), transparent 20%),url(https://assets.nflxext.com/ffe/siteui/vlv3/92bb3a0b-7e91-40a0-b27b-f2c3ac9ef6e4/3823cff1-a0ce-4532-b99a-d47d99df9599/US-en-20210322-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
   background-size: cover !important;
 }
 .emby-checkbox:checked+span+.checkboxOutline {
@@ -711,10 +711,11 @@ div#divRunningTasks {
   position: relative;
   top: 0;
   padding-left: 1rem;
-  width: Fit-content !important;
+  width: fit-content !important;
   background: transparent;
-  padding-top: 23rem;
+  padding-bottom: 13rem;
   font-size: 20px;
+  padding-top: 10rem;
 }
 .detailImageContainer .card {
   display: none;
@@ -890,9 +891,9 @@ h2 {
   background-color: rgba(0, 164, 220, 0.2);
 }
 .mainDrawer.drawer-open {
-    box-shadow: none !important;
-    padding-right: 50%;
-    background: linear-gradient(90deg, black 15%, transparent);
+  box-shadow: none !important;
+  padding-right: 50%;
+  background: linear-gradient(90deg, black 15%, transparent);
 }
 .navMenuOption {
   border-right-color: rgba(0,0,0,0);

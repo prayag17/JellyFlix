@@ -16,6 +16,23 @@
   padding-top: 4.5rem !important;
 }
 
+.hide + .detailPageWrapperContainer .detailRibbon {
+  padding-top: 10rem !important;
+  padding-bottom: 13rem !important;
+}
+
+.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
+  padding-bottom: 0;
+  padding-top: 20rem !important;
+}
+
+
+.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
+  padding-bottom: 0;
+  padding-top: 20rem !important;
+}
+
+
 #itemDetailPage .itemName.infoText.parentNameLast {
   display: none;
 }
