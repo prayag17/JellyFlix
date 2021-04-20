@@ -906,6 +906,12 @@ h2 {
   border-right-color: var(--accent);
 }
 /*Episode cards*/
+.listItem[data-type=Audio] .mediaInfoItem::after{
+  display: none !important;
+}
+.listItem[data-type=Audio] .listItem-indexnumberleft {
+  padding-left: 5px;
+}
 #itemDetailPage .vertical-list {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
