@@ -218,24 +218,34 @@ div#itemDetailPage {
   }
 }
 /*IPhone 12 Pro Max*/
-@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3){
+@media only screen and (max-device-width: 429px) and (max-device-height: 927px) and (-webkit-device-pixel-ratio: 3){
   .layout-mobile #itemDetailPage .detailLogo {
     height: 35%;
     top: 21%;
   }
 }
 /*IPhone 12 Pro*/
-@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3){
+@media only screen and (max-device-width: 391px) and (max-device-height: 845px) and (-webkit-device-pixel-ratio: 3){
   .layout-mobile #itemDetailPage .detailLogo {
     top: 28%;
   }
 }
 /*IPhone 12 Mini*/
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){
+@media only screen and (max-device-width: 376px) and (max-device-height: 813px) and (-webkit-device-pixel-ratio: 3){
   .layout-mobile #itemDetailPage .detailLogo {
     top: 33%;
   }
 }
+/*media queries for 360x640*/
+@media (max-device-width: 361px) and (max-device-height: 641px){
+  .layout-mobile .primaryImageWrapper::before {
+    background: linear-gradient(to top,#181818 30%, transparent);
+  }
+  .detailLogo.lazy.lazy-image-fadein-fast {
+    top: 50% !important;
+  }
+}
+
 .layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
   padding-top: 4.5rem !important;
   padding-bottom: 0 !important;
