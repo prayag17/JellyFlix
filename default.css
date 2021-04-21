@@ -217,7 +217,25 @@ div#itemDetailPage {
     margin-top: 15rem;
   }
 }
-
+/*IPhone 12 Pro Max*/
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3){
+  .layout-mobile #itemDetailPage .detailLogo {
+    height: 35%;
+    top: 21%;
+  }
+}
+/*IPhone 12 Pro*/
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3){
+  .layout-mobile #itemDetailPage .detailLogo {
+    top: 28%;
+  }
+}
+/*IPhone 12 Mini*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){
+  .layout-mobile #itemDetailPage .detailLogo {
+    top: 33%;
+  }
+}
 @media (max-width: 321px){
   .layout-mobile .mainDetailButtons, .layout-mobile .infoText {
     font-size: 80%;
