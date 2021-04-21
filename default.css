@@ -236,6 +236,10 @@ div#itemDetailPage {
     top: 33%;
   }
 }
+.layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+  padding-top: 4.5rem !important;
+  padding-bottom: 0 !important;
+}
 @media (max-width: 321px){
   .layout-mobile .mainDetailButtons, .layout-mobile .infoText {
     font-size: 80%;
@@ -305,7 +309,7 @@ div#itemDetailPage {
 }
 @media (max-height: 816px) {
   .layout-mobile .primaryImageWrapper::before {
-    background: linear-gradient(to top,#181818 35%, transparent);
+    background: linear-gradient(to top,#181818 15%, transparent);
   }
 }
 @media (max-height: 641px){
