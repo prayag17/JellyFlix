@@ -668,6 +668,32 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .card:hover .cardImageContainer {
   background-size: 130%;
 }
+.overflowSquareCard .cardImageContainer::before {
+  content: "";
+  background: inherit;
+  width: 130%;
+  height: 130%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-size: cover;
+  filter: brightness(40%) blur(10px);
+  z-index: 0;
+  transform: translate(-50%,-50%);
+}
+.overflowSquareCard .cardImageContainer::after {
+  content: "";
+  background: inherit;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  transition: all .15s;
+}
+.overflowSquareCard:hover .cardImageContainer::after {
+  background-size: 120%;
+}
 .paper-icon-button-light:hover:not(:disabled) {
   color: var(--accent);
   background-color: #2020208c;
@@ -748,6 +774,7 @@ div#divRunningTasks {
   padding-bottom: 13rem;
   font-size: 20px;
   padding-top: 10rem;
+  max-width: 95%;
 }
 .detailImageContainer .card {
   display: none;
