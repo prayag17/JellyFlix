@@ -763,7 +763,7 @@ div#divRunningTasks {
   background: #181818;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
-  background: linear-gradient(90deg,#181818 30%,rgba(15,23,30,0)), linear-gradient(0deg,#181818 3%,rgba(15,23,30,0) 50%) !important;
+  background: linear-gradient(90deg,#181818 30%,rgba(15,23,30,0)), linear-gradient(0deg,#181818 5%,rgba(15,23,30,0)) !important;
 }
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
   position: relative;
