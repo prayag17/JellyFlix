@@ -217,6 +217,11 @@ div#itemDetailPage {
     margin-top: 15rem;
   }
 }
+@media (max-width: 341px){
+  .layout-mobile .primaryImageWrapper::before {
+    background: linear-gradient(to top,#181818 30%, transparent);
+  }
+}
 /*IPhone 12 Pro Max*/
 @media only screen and (max-device-width: 429px) and (max-device-height: 927px) and (-webkit-device-pixel-ratio: 3){
   .layout-mobile #itemDetailPage .detailLogo {
