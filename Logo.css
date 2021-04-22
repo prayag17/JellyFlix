@@ -21,15 +21,10 @@
   padding-bottom: 13rem !important;
 }
 
-.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-  padding-bottom: 0;
-  padding-top: 20rem !important;
-}
-
 
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
   padding-bottom: 0;
-  padding-top: 20rem !important;
+  padding-top: 20rem;
 }
 
 
