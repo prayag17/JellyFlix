@@ -247,7 +247,7 @@ div#itemDetailPage {
     margin-top: 24rem;
   }
   .primaryImageWrapper::before {
-    background: linear-gradient(to top,#141414 20%, transparent);
+    background: linear-gradient(to top,#181818 20%, transparent);
   }
 }
 
@@ -388,7 +388,7 @@ div#itemDetailPage {
 .primaryImageWrapper::before {
   content: "";
   display: block;
-  background: linear-gradient(to top,#141414 40%, transparent);
+  background: linear-gradient(to top,#181818 40%, transparent);
   height: 100%;
   width: 100%;
   left: 0;
