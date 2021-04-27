@@ -225,7 +225,7 @@ div#itemDetailPage {
 /*media queries for 360x640*/
 @media (max-device-width: 361px) and (max-device-height: 641px){
   .layout-mobile .primaryImageWrapper::before {
-    background: linear-gradient(to top,#181818 30%, transparent);
+    background: linear-gradient(to top,#181818 30%, transparent) !important;
   }
   .detailLogo.lazy.lazy-image-fadein-fast {
     top: 50% !important;
