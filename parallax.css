@@ -1,0 +1,8 @@
+div#itemBackdrop {
+  background-attachment: fixed;
+  transform: translateZ(-1px) scale(1.1);
+}
+
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after{
+  background: linear-gradient(90deg,#181818 30%,rgba(15,23,30,0)), linear-gradient(0deg,#181818 10%,rgba(15,23,30,0)) !important;
+}

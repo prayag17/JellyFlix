@@ -170,6 +170,7 @@ div#itemBackdrop {
 
 div#itemDetailPage {
   background: #181818;
+  overflow-x: hidden;
 }
 .detailPagePrimaryContent {
   position: relative;
