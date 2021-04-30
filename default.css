@@ -865,15 +865,17 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .mediaInfoItem {
     position: relative;
+    margin-right: 16px;
+    font-weight: 100;
 }
 
-.mediaInfoItem::after {
+.mediaInfoItem:not(:last-child):after {
     content: "";
-    width: 3px;
+    width: 1px;
     height: 100%;
     background: #7c7c7cee;
     position: absolute;
-    right: -12px;
+    right: -9px;
     border-radius: 10px;
 }
 
