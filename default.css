@@ -9,6 +9,11 @@
 
 /*Highlight*/
 
+::-moz-selection {
+    background: var(--accent);
+    text-shadow: none;
+}
+
 ::selection {
     background: var(--accent);
     text-shadow: none;
@@ -210,6 +215,23 @@ div#itemBackdrop {
     background-attachment: scroll;
 }
 
+div#itemBackdrop::after {
+    background: linear-gradient(to top, #181819 0, rgba(24, 24, 24, .987) 1.62%, rgba(24, 24, 24, .951) 3.1%, rgba(24, 24, 24, .896) 4.5%, rgba(24, 24, 24, .825) 5.8%, rgba(24, 24, 24, .741) 7.06%, rgba(24, 24, 24, .648) 8.24%, rgba(24, 24, 24, .55) 9.42%, rgba(24, 24, 24, .45) 10.58%, rgba(24, 24, 24, .352) 11.76%, rgba(24, 24, 24, .259) 12.94%, rgba(24, 24, 24, .175) 14.2%, rgba(24, 24, 24, .104) 15.5%, rgba(24, 24, 24, .049) 16.9%, rgba(26, 24, 24, .013) 18.38%, rgba(24, 24, 24, 0) 20%), rgba(24, 24, 24, 0.35) !important;
+}
+
+div#itemBackdrop::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    left: 0;
+    width: 35%;
+    min-width: 500px;
+    max-width: 800px;
+    position: absolute;
+    background: linear-gradient(to right, #181818 10%, rgba(24, 24, 24, .98) 20%, rgba(24, 24, 24, .97) 25%, rgba(24, 24, 24, .95) 35%, rgba(24, 24, 24, .94) 40%, rgba(24, 24, 24, .92) 45%, rgba(24, 24, 24, .9) 50%, rgba(24, 24, 24, .87) 55%, rgba(24, 24, 24, .82) 60%, rgba(24, 24, 24, .75) 65%, rgba(24, 24, 24, .63) 70%, rgba(24, 24, 24, .45) 75%, rgba(24, 24, 24, .27) 80%, rgba(24, 24, 24, .15) 85%, rgba(24, 24, 24, .08) 90%, rgba(24, 24, 24, .03) 95%, rgba(24, 24, 24, 0) 100%);
+}
+
 .detailPageSecondaryContainer {
     margin: 0em !important;
     background: transparent;
@@ -227,12 +249,16 @@ div#itemDetailPage {
     background: transparent;
     padding-bottom: 5rem;
     min-height: 26rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     text-shadow: 1px 1px 5px #181818;
 }
 
 .layout-mobile .detailPagePrimaryContent {
     width: 100%;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
     padding: 0;
 }
@@ -313,12 +339,6 @@ div#itemDetailPage {
 }
 
 @media (max-width: 62.5em) {
-    div#itemBackdrop {
-        background-size: 103%;
-        background-position: bottom 90% right 0% !important;
-        height: 50% !important;
-        z-index: 0 !important;
-    }
     .detailPageSecondaryContainer {
         margin-top: -0.5px;
     }
@@ -344,14 +364,13 @@ div#itemDetailPage {
 }
 
 @media all and (min-width: 32em) and (max-width: 100em) and (orientation: landscape) {
-    div#itemBackdrop {
-        height: 90% !important;
-    }
     .layout-mobile .detailPageSecondaryContainer {
         margin: 0;
     }
     .detailPagePrimaryContent {
         min-height: 12rem;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         width: 55%;
     }
@@ -396,6 +415,8 @@ div#itemDetailPage {
     }
     .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
         font-size: smaller;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         overflow: hidden;
     }
@@ -418,7 +439,6 @@ div#itemDetailPage {
 }
 
 .layout-mobile .primaryImageWrapper {
-    -webkit-flex: 0 0 auto;
     flex: 0 0 auto;
 }
 
@@ -439,6 +459,7 @@ div#itemDetailPage {
     left: 0;
     top: 0;
     overflow: visible;
+    -webkit-filter: brightness(65%);
     filter: brightness(65%);
     z-index: -1;
     max-height: unset;
@@ -493,6 +514,8 @@ div#itemDetailPage {
     #loginPage .padded-left.padded-right.padded-bottom-page {
         margin-top: 0 !important;
         width: -webkit-fill-available !important;
+        height: -webkit-fit-content !important;
+        height: -moz-fit-content !important;
         height: fit-content !important;
     }
 }
@@ -816,6 +839,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     top: 50%;
     left: 50%;
     background-size: cover;
+    -webkit-filter: brightness(40%) blur(10px);
     filter: brightness(40%) blur(10px);
     z-index: 0;
     transform: translate(-50%, -50%);
@@ -922,28 +946,13 @@ div#divRunningTasks {
     background: #181818;
 }
 
-div#itemBackdrop::after {
-    background: linear-gradient(to top, #181819 0, rgba(24, 24, 24, .987) 1.62%, rgba(24, 24, 24, .951) 3.1%, rgba(24, 24, 24, .896) 4.5%, rgba(24, 24, 24, .825) 5.8%, rgba(24, 24, 24, .741) 7.06%, rgba(24, 24, 24, .648) 8.24%, rgba(24, 24, 24, .55) 9.42%, rgba(24, 24, 24, .45) 10.58%, rgba(24, 24, 24, .352) 11.76%, rgba(24, 24, 24, .259) 12.94%, rgba(24, 24, 24, .175) 14.2%, rgba(24, 24, 24, .104) 15.5%, rgba(24, 24, 24, .049) 16.9%, rgba(26, 24, 24, .013) 18.38%, rgba(24, 24, 24, 0) 20%), rgba(24, 24, 24, 0.35) !important;
-}
-
-div#itemBackdrop::before {
-    content: "";
-    top: 0;
-    bottom: 0;
-    right: -200px;
-    left: 0;
-    width: 35%;
-    min-width: 500px;
-    max-width: 800px;
-    position: absolute;
-    background: linear-gradient(to right, #181818 10%, rgba(24, 24, 24, .98) 20%, rgba(24, 24, 24, .97) 25%, rgba(24, 24, 24, .95) 35%, rgba(24, 24, 24, .94) 40%, rgba(24, 24, 24, .92) 45%, rgba(24, 24, 24, .9) 50%, rgba(24, 24, 24, .87) 55%, rgba(24, 24, 24, .82) 60%, rgba(24, 24, 24, .75) 65%, rgba(24, 24, 24, .63) 70%, rgba(24, 24, 24, .45) 75%, rgba(24, 24, 24, .27) 80%, rgba(24, 24, 24, .15) 85%, rgba(24, 24, 24, .08) 90%, rgba(24, 24, 24, .03) 95%, rgba(24, 24, 24, 0) 100%);
-}
-
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
 .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
     position: relative;
     top: 0;
     padding-left: 1rem;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
     width: fit-content !important;
     background: transparent;
     padding-bottom: 13rem;
@@ -1057,6 +1066,9 @@ h2 {
 /* Adjust both "size-adjust" and "size" to modify size */
 
 .headerTabs.sectionTabs {
+    -webkit-text-size-adjust: 130%;
+    -moz-text-size-adjust: 130%;
+    -ms-text-size-adjust: 130%;
     text-size-adjust: 130%;
     font-size: 130%;
 }
@@ -1074,6 +1086,7 @@ h2 {
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 
 .backdropImage {
+    -webkit-filter: blur(25px) saturate(135%) contrast(110%) brightness(35%);
     filter: blur(25px) saturate(135%) contrast(110%) brightness(35%);
 }
 
@@ -1133,6 +1146,7 @@ h2 {
 }
 
 .upNextDialog {
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     box-shadow: 0 0 8px 5px black;
 }
@@ -1197,10 +1211,11 @@ h2 {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     padding: 0 6px !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     justify-content: space-evenly;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     margin: -6px;
     width: calc(100% - 6px);
 }
@@ -1217,6 +1232,8 @@ h2 {
 
 .listItem-withContentWrapper {
     transition: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     max-width: 100%;
     margin: 6px;
@@ -1235,9 +1252,7 @@ h2 {
 }
 
 .listItem-content {
-    display: -webkit-flex;
     display: flex;
-    -webkit-align-items: center;
     align-items: center;
     width: 100%;
     display: grid;
@@ -1258,6 +1273,8 @@ h2 {
 }
 
 .secondary.listItem-overview.listItemBodyText {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -1334,11 +1351,15 @@ h2 {
 }
 
 .raised.homeLibraryButton:hover {
+    transition: -webkit-filter 1s;
     transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
 }
 
 .raised.homeLibraryButton {
+    transition: -webkit-filter 1s;
     transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
 }
 
 .homeLibraryButton {
