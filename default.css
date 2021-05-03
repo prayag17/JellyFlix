@@ -490,9 +490,16 @@ div#itemDetailPage {
 
 /*Login Page*/
 
+#loginPage h1::after {
+    content: "Sign In";
+    font-size: 32px;
+}
+
 #loginPage h1 {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 0;
+    margin-bottom: 21.44px;
+    margin-top: 32px;
 }
 
 .inputContainer {
@@ -518,13 +525,6 @@ div#itemDetailPage {
         height: -moz-fit-content !important;
         height: fit-content !important;
     }
-}
-
-
-/*Hide "please login" text, margin is to prevent login form moving too far up*/
-
-#loginPage .padded-left.padded-right.padded-bottom-page {
-    margin-top: 50px;
 }
 
 
