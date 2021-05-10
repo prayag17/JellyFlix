@@ -310,7 +310,7 @@ div#itemDetailPage {
 
 @media (max-device-width: 361px) and (max-device-height: 641px) {
     .layout-mobile .primaryImageWrapper::before {
-        background: linear-gradient(to top, #181818 30%, transparent) !important;
+        background: linear-gradient(to top, #181818 25%, transparent) !important;
     }
     .detailLogo.lazy.lazy-image-fadein-fast {
         top: 50% !important;
@@ -410,9 +410,6 @@ div#itemDetailPage {
 }
 
 @media all and (max-width: 32em) {
-    .primaryImageWrapper>img {
-        border-radius: var(--rounding);
-    }
     .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
         font-size: smaller;
         height: -webkit-fit-content;
@@ -455,7 +452,7 @@ div#itemDetailPage {
 
 .layout-mobile .primaryImageWrapper>img {
     min-width: 100%;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     overflow: visible;
@@ -468,7 +465,7 @@ div#itemDetailPage {
 .primaryImageWrapper::before {
     content: "";
     display: block;
-    background: linear-gradient(to top, #181818 40%, transparent);
+    background: linear-gradient(to top, #181818 30%, transparent);
     height: 100%;
     width: 100%;
     left: 0;
