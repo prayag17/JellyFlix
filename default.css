@@ -1206,7 +1206,7 @@ h2 {
 
 #itemDetailPage .vertical-list {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 0 6px !important;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1221,9 +1221,15 @@ h2 {
     opacity: 100%;
 }
 
-@media (max-width: 901px) {
+@media (max-width: 1291px) {
     #itemDetailPage .vertical-list {
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    #itemDetailPage .vertical-list {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
