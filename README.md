@@ -9,16 +9,24 @@
 ```css
 @import url("https://prayag17.github.io/JellyFlix/default.css");
 ```
+
+Use the following code to displa logo also:
+
+```css
+@import url("https://prayag17.github.io/JellyFlix/default.css");
+@import url("https://prayag17.github.io/JellyFlix/Logo.css");
+```
 <div class="listCont">
   <h3 align="center"> Features </h3>
   <div class="list" style="display: block;">
     <p>1) Netflix like title page.</p>
-    <p>2) Netflix's red color accent.</p>
-    <p>3) Netflix like login.</p>
-    <p>4) Works well on the phone and the web.</p>
-    <p>5) Blured + noise background.</p>
-    <p>6) Transparent Header</p>
-    <p>7) can be used by just one line and more!!</p>
+    <p>2) Displays logo instead of text</p>
+    <p>3) Netflix's red color accent.</p>
+    <p>4) Netflix like login.</p>
+    <p>5) Works well on the phone and the web.</p>
+    <p>6) Blured + noise background.</p>
+    <p>7) Transparent Header</p>
+    <p>8) can be used by just one line and more!!</p>
   </div>
 </div>
 
