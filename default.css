@@ -110,45 +110,17 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 
 /*Top Bar Transparent*/
 
-#userImagePage,
-#displayPreferencesPage,
-#languagePreferencesPage,
-#editItemMetadataPage,
-#homeScreenPreferencesPage,
-#dashboardPage,
-#dashboardGeneralPage,
-#userProfilesPage,
-#devicesPage,
-#serverActivityPage,
-#liveTvStatusPage,
-#liveTvSettingsPage,
-#networkingPage,
-#apiKeysPage,
-#logPage,
-#notificationSettingsPage,
-#scheduledTasksPage,
-#itemDetailPage {
-    margin-top: 60px;
+div[data-role=page] {
+    margin-top: 130px;
     padding-top: 0px !important;
-    overflow: scroll;
+    overflow: hidden scroll;
 }
 
 @media all and (min-width: 100em) {
-    #indexPage,
-    #moviesPage,
-    #tvRecommendedPage,
-    #musicRecommendedPage {
+    div[data-role=page] {
         margin-top: 70px;
         padding-top: 0px !important;
-        overflow: scroll;
-    }
-    #encodingSettingsPage,
-    #mediaLibraryPage,
-    #dlnaSettingsPage,
-    #pluginsPage {
-        margin-top: 60px;
-        padding-top: 0px !important;
-        overflow: scroll;
+        overflow: hidden scroll;
     }
 }
 
@@ -163,7 +135,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
     #musicRecommendedPage {
         margin-top: 130px;
         padding-top: 0px !important;
-        overflow: scroll;
+        overflow: hidden scroll;
     }
 }
 
