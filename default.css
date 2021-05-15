@@ -110,33 +110,36 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 
 /*Top Bar Transparent*/
 
-div[data-role=page] {
-    margin-top: 130px;
+.force-scroll {
+    overflow: hidden;
+}
+
+div[data-role=page],
+.libraryPage:not(.noSecondaryNavPage) {
+    margin-top: 9em;
     padding-top: 0px !important;
     overflow: hidden scroll;
 }
 
-@media all and (min-width: 100em) {
+@media (min-width: 100em) {
     div[data-role=page] {
-        margin-top: 70px;
+        margin-top: 5em;
         padding-top: 0px !important;
         overflow: hidden scroll;
     }
 }
 
-@media all and (max-width: 100em) {
-    #indexPage,
-    #moviesPage,
-    #tvRecommendedPage,
-    #encodingSettingsPage,
-    #mediaLibraryPage,
-    #dlnaSettingsPage,
-    #pluginsPage,
-    #musicRecommendedPage {
-        margin-top: 130px;
-        padding-top: 0px !important;
-        overflow: hidden scroll;
-    }
+div[data-role=page]:not(.withTabs) {
+    margin-top: 4em !important;
+}
+
+.layout-tv body {
+    overflow-y: scroll;
+}
+
+.layout-tv div[data-role=page] {
+    margin: 0;
+    overflow: visible;
 }
 
 .skinHeader-withBackground {
