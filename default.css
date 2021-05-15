@@ -1297,10 +1297,6 @@ h2 {
     margin-right: 0;
 }
 
-.section0 .itemsContainer {
-    flex-wrap: wrap;
-}
-
 @media (max-width: 1px) and (orientation: landscape) {
     .section0 {
         display: none;
