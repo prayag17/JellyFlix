@@ -458,6 +458,10 @@ div#itemDetailPage {
 
 /*Login Page*/
 
+div#loginPage {
+    margin-top: 0 !important;
+}
+
 #loginPage h1::after {
     content: "Sign In";
     font-size: 32px;
