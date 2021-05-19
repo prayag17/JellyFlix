@@ -521,6 +521,11 @@ div#loginPage {
 
 /*video Page*/
 
+div#videoOsdPage {
+    overflow: hidden !important;
+    margin-top: 0 !important;
+}
+
 .mdl-slider-background-lower {
     background-color: var(--accent) !important;
 }
