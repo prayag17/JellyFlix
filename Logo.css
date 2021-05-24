@@ -4,8 +4,9 @@
     top: 5%;
     background-position: 0 !important;
     display: block !important;
-    width: 99vw;
+    width: auto;
     height: 24vh;
+    max-width: 45%;
 }
 
 .layout-mobile .detailRibbon {
