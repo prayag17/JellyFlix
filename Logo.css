@@ -7,6 +7,8 @@
     width: auto;
     height: 24vh;
     max-width: 45%;
+    -webkit-filter: drop-shadow(2px 4px 6px #181818) drop-shadow(-2px 4px 6px #181818);
+    filter: drop-shadow(2px 4px 6px #181818) drop-shadow(-2px 4px 6px #181818);
 }
 
 .layout-mobile .detailRibbon {
