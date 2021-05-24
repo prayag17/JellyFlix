@@ -845,6 +845,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .button-flat {
     border-radius: var(--rounding) !important;
+    text-shadow: 0 0 10px #181818;
 }
 
 #indexPage a.raised.homeLibraryButton.emby-button:hover {
