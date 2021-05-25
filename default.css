@@ -792,7 +792,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     transition: all .15s;
 }
 
-.card:hover .cardBox {
+.card:hover>.cardBox,
+.card:focus>.cardBox {
     box-shadow: 0px 3px 9px 0px black;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.75);
@@ -803,7 +804,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     transition: all .15s;
 }
 
-.card:hover .cardImageContainer {
+.card:hover .cardImageContainer,
+.card:focus .cardImageContainer {
     background-size: 130%;
 }
 
