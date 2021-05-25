@@ -45,6 +45,7 @@
 .layout-mobile #itemDetailPage .detailLogo {
     z-index: 1;
     width: 90%;
+    max-width: 90% !important;
     background-position: 50% !important;
     left: 50%;
     top: 37%;
