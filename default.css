@@ -431,6 +431,8 @@ div#itemDetailPage {
     filter: brightness(65%);
     z-index: -1;
     max-height: unset;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .primaryImageWrapper::before {
