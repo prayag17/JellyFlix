@@ -1248,12 +1248,10 @@ h2 {
     height: 100%;
 }
 
-.listItem {
+div:not(.paperList) .listItem {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .listItem-content {
