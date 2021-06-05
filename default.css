@@ -1238,6 +1238,10 @@ h2 {
     overflow: hidden;
     padding: 0;
     overflow: hidden;
+    -webkit-border-radius: var(--rounding);
+    -moz-border-radius: var(--rounding);
+    -ms-border-radius: var(--rounding);
+    -o-border-radius: var(--rounding);
 }
 
 .listItem-withContentWrapper:hover {
@@ -1252,6 +1256,7 @@ div:not(.paperList) .listItem {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    border-radius: 0;
 }
 
 .listItem-content {
@@ -1271,10 +1276,35 @@ div:not(.paperList) .listItem {
     margin: 0 !important;
     top: 0;
     left: 0;
+    border-radius: 0 !important;
+}
+
+.listItemImage.listItemImage-large::after {
+    content: "";
+    background-image: -moz- oldlinear-gradient(bottom, rgba(0, 0, 0, .8) 5%, rgba(0, 0, 0, 0) 95%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 5%, rgba(0, 0, 0, 0) 95%);
+    position: absolute;
+    bottom: 0;
+    right: -.5px;
+    left: 0;
+    height: 55px;
 }
 
 .layout-mobile #itemDetailPage .vertical-list {
     grid-template-columns: 100%;
+}
+
+.listItem-overview {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #a3a3a3 !important;
+}
+
+.listItemBodyText {
+    margin: 0 !important;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .secondary.listItem-overview.listItemBodyText {
