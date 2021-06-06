@@ -1073,7 +1073,7 @@ h2 {
 }
 
 .backgroundContainer.withBackdrop {
-    background-image: linear-gradient(to top, #181818, transparent calc(100% - 15em), #181818 calc(100% - 4em)), url(https://i.imgur.com/REuCzPK.png) !important;
+    background-image: linear-gradient(to top, #181818, transparent, #181818 calc(100% - 4em)), url(https://i.imgur.com/REuCzPK.png) !important;
     opacity: 1;
     z-index: -1;
     background-color: transparent;
