@@ -473,7 +473,7 @@ div#loginPage {
     font-weight: 700;
     font-size: 0;
     margin-bottom: 21.44px;
-    margin-top: 32px;
+    margin-top: 32px !important;
 }
 
 .inputContainer {
