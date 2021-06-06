@@ -1073,10 +1073,10 @@ h2 {
 }
 
 .backgroundContainer.withBackdrop {
-    background-color: rgba(24, 24, 24, 1);
-    background-image: url(https://i.imgur.com/REuCzPK.png) !important;
-    opacity: .5;
+    background-image: linear-gradient(to top, #181818, transparent), url(https://i.imgur.com/REuCzPK.png) important;
+    opacity: 1;
     z-index: -1;
+    background-color: transparent;
 }
 
 
@@ -1295,9 +1295,9 @@ div:not(.paperList) .listItem {
 }
 
 .listItem-overview {
-    font-size: 12px;
+    font-size: 12px !important;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 400 !important;
     color: #a3a3a3 !important;
 }
 
