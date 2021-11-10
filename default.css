@@ -69,10 +69,6 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   box-shadow: none;
 }
 
-.cardBox.cardBox-bottompadded {
-  background: rgba(0, 0, 0, 0.25);
-}
-
 .itemProgressBar {
   background: none;
   height: 928em;
@@ -81,10 +77,6 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 .emby-checkbox:checked + span + .checkboxOutline,
 .itemProgressBarForeground {
   background-color: var(--deftraback) !important;
-}
-
-.cardBox {
-  box-shadow: 0px 0px 9px 0px rgb(0 0 0);
 }
 
 /*Theming video page*/
@@ -795,7 +787,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 /*fixing Poster Margin*/
 
 .itemsContainer > .card > .cardBox {
-  margin: 16px !important;
+  margin: 0 !important;
 }
 
 .sectionTitleContainer.flex {
@@ -831,26 +823,49 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .cardBox {
-  border-radius: var(--rounding);
+  background: #141414;
+  box-shadow: none;
   overflow: hidden;
   transition: all 0.15s;
 }
 
-.card:hover > .cardBox,
-.card:focus > .cardBox {
-  box-shadow: 0px 3px 9px 0px black;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.75);
+.card {
+  border-radius: var(--rounding);
+  transition: 0.2s;
 }
 
-.cardImageContainer {
-  background-size: 105%;
-  transition: all 0.15s;
+.homeLibraryButton:hover,
+.homeLibraryButton:focus,
+.card:hover,
+.card:focus {
+  transform: scale(1.1) !important;
+  z-index: 1;
 }
 
-.card:hover .cardImageContainer,
-.card:focus .cardImageContainer {
-  background-size: 130%;
+.homeLibraryButton:hover ~ .homeLibraryButton,
+.homeLibraryButton:focus ~ .homeLibraryButton,
+.card:hover ~ .card,
+.card:focus ~ .card {
+  transform: translateX(5%) !important;
+}
+
+.emby-scroller {
+  overflow: visible !important;
+}
+
+.itemsContainer {
+  grid-gap: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 !important;
+}
+
+.itemsContainer:focus-within .homeLibraryButton,
+.itemsContainer:hover .homeLibraryButton,
+.itemsContainer:focus-within .card,
+.itemsContainer:hover .card {
+  transform: translateX(-5%);
 }
 
 .overflowSquareCard .cardImageContainer::before {
@@ -879,10 +894,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   transition: all 0.15s;
 }
 
-.overflowSquareCard:hover .cardImageContainer::after {
-  background-size: 120%;
-}
-
 .paper-icon-button-light:hover:not(:disabled) {
   color: var(--accent);
   background-color: #2020208c;
@@ -894,16 +905,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   text-shadow: 0 0 10px #181818;
 }
 
-#indexPage a.raised.homeLibraryButton.emby-button:hover {
-  border-radius: 10px !important;
-  box-shadow: 0px 3px 9px black;
-  background: rgba(0, 0, 0, 0.75) !important;
-}
-
-#indexPage a.raised.homeLibraryButton.emby-button {
-  background: rgba(0, 0, 0, 0.25) !important;
-  box-shadow: 0 0 9px black;
-  transition: all 0.2s;
+#indexPage .homeLibraryButton {
+  background: #101010 !important;
+  margin: 0 !important;
+  transition: 0.2s;
 }
 
 .raised {
@@ -1114,16 +1119,9 @@ h2 {
 }
 
 .backgroundContainer.withBackdrop {
-  background-image: linear-gradient(
-      to top,
-      #181818,
-      transparent,
-      #181818 calc(100% - 4em)
-    ),
-    url(https://i.imgur.com/REuCzPK.png) !important;
   opacity: 1;
   z-index: -1;
-  background-color: transparent;
+  background-color: #181818;
 }
 
 /*Rounded corners and square hover buttons*/
