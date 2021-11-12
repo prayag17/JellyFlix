@@ -74,8 +74,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   height: 928em;
 }
 
-.emby-checkbox:checked + span + .checkboxOutline,
-.itemProgressBarForeground {
+.emby-checkbox:checked + span + .checkboxOutline {
   background-color: var(--deftraback) !important;
 }
 
@@ -541,16 +540,6 @@ div#loginPage {
   background-size: cover !important;
 }
 
-.emby-checkbox:checked + span + .checkboxOutline {
-  border-color: var(--accent) !important;
-}
-
-/*Progress Bar*/
-
-.emby-checkbox:checked + span + .checkboxOutline {
-  background-color: var(--accent) !important;
-}
-
 /*video Page*/
 
 div#videoOsdPage {
@@ -713,7 +702,6 @@ video:cue {
 .cardContent-button,
 .cardContent-shadow,
 .itemDetailImage,
-.cardOverlayButton-hover,
 .cardImageContainer,
 .cardPadder,
 .listItemButton,
@@ -762,7 +750,6 @@ video:cue {
 .itemDetailImage,
 .cardOverlayButton-hover,
 .cardOverlayContainer,
-.cardImageContainer,
 .cardPadder,
 .listItemButton,
 .headerButton,
@@ -822,8 +809,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: var(--deftraback) !important;
 }
 
+.emby-scrollbuttons {
+  z-index: -1;
+}
+
 .cardBox {
-  background: #141414;
+  background: transparent !important;
   box-shadow: none;
   overflow: hidden;
   transition: all 0.15s;
@@ -832,40 +823,109 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .card {
   border-radius: var(--rounding);
   transition: 0.2s;
+  z-index: 100;
+}
+
+.card:first-child {
+  transform-origin: left !important;
+}
+
+.card:last-child {
+  transform-origin: right;
+}
+
+.verticalSection:focus-within + .verticalSection,
+.verticalSection:hover + .verticalSection {
+  z-index: -1;
+}
+
+.card .cardScalable,
+.card .cardScalable {
+  border-radius: var(--rounding);
+  overflow: hidden;
+}
+.card:hover .cardScalable,
+.card:focus .cardScalable {
+  border-radius: 0 !important;
+}
+
+.paper-icon-button-light.cardOverlayButton {
+  background: #181818;
+  border-radius: 100% !important;
+}
+
+.cardOverlayButton[data-action="resume"] {
+  border: 2px solid var(--accent);
+}
+
+.cardText {
+  opacity: 0;
+  transition: 0.2s;
+}
+.card:hover .cardText {
+  opacity: 1;
 }
 
 .homeLibraryButton:hover,
 .homeLibraryButton:focus,
 .card:hover,
 .card:focus {
-  transform: scale(1.1) !important;
-  z-index: 1;
+  transform: scale(1.2) !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+  box-shadow: 0 0 20px black;
 }
 
-.homeLibraryButton:hover ~ .homeLibraryButton,
-.homeLibraryButton:focus ~ .homeLibraryButton,
-.card:hover ~ .card,
-.card:focus ~ .card {
-  transform: translateX(5%) !important;
+.homeLibraryButton,
+.card:hover,
+.card:focus {
+  background-color: #101010 !important;
+}
+
+.itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
+  padding: 0 !important;
+  margin: 0 0 0 3.3% !important;
 }
 
 .emby-scroller {
   overflow: visible !important;
 }
 
+.card,
+.homeLibraryButton {
+  margin: 5px;
+}
+
+.homeLibraryButton {
+  z-index: 100;
+}
+
+.itemProgressBar {
+  background: #141414;
+  height: 6px;
+}
+
+.itemProgressBarForeground {
+  background: var(--accent);
+}
+
+.innerCardFooter {
+  width: calc(100% - 12px);
+  margin: 0 auto;
+  position: absolute;
+  bottom: 6px;
+}
+
 .itemsContainer {
-  grid-gap: 5px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 !important;
 }
 
-.itemsContainer:focus-within .homeLibraryButton,
-.itemsContainer:hover .homeLibraryButton,
-.itemsContainer:focus-within .card,
-.itemsContainer:hover .card {
-  transform: translateX(-5%);
+.homeLibraryButton:not(:hover),
+.card:not(:hover) {
+  z-index: 5;
 }
 
 .overflowSquareCard .cardImageContainer::before {
@@ -896,8 +956,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .paper-icon-button-light:hover:not(:disabled) {
   color: var(--accent);
-  background-color: #2020208c;
-  box-shadow: 0 0 15px -2px black;
+  background: #181818;
 }
 
 .button-flat {
@@ -907,7 +966,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 #indexPage .homeLibraryButton {
   background: #101010 !important;
-  margin: 0 !important;
   transition: 0.2s;
 }
 
@@ -1113,9 +1171,8 @@ h2 {
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 
-.backdropImage {
-  -webkit-filter: blur(25px) saturate(135%) contrast(110%) brightness(35%);
-  filter: blur(25px) saturate(135%) contrast(110%) brightness(35%);
+.backdropContainer {
+  display: none !important;
 }
 
 .backgroundContainer.withBackdrop {
@@ -1129,9 +1186,7 @@ h2 {
 .cardContent-button,
 .cardContent-shadow,
 .itemDetailImage,
-.cardOverlayButton-hover,
 .cardOverlayContainer,
-.cardImageContainer,
 .cardPadder,
 .listItemImage,
 .listItemImageButton,
@@ -1191,7 +1246,7 @@ h2 {
 }
 
 .cardOverlayContainer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px 5px 0px 0px !important;
 }
 
