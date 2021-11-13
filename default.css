@@ -835,9 +835,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   transform-origin: right;
 }
 
-.verticalSection:focus-within + .verticalSection,
-.verticalSection:hover + .verticalSection {
-  z-index: -1;
+.verticalSection:focus-within,
+.verticalSection:hover {
+  z-index: 50;
 }
 
 .card .cardScalable,
@@ -1056,6 +1056,14 @@ div#divRunningTasks {
 
 .cardOverlayButton-br {
   margin-right: 2%;
+}
+
+.chapterCard .cardText {
+  opacity: 1;
+}
+
+.card.chapterCard {
+  transform: none !important;
 }
 
 .card[data-type="Actor"] {
@@ -1584,10 +1592,10 @@ div:not(.paperList) .listItem {
 /* Chapters */
 
 .chapterCard .innerCardFooter {
-  height: auto;
-  background: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(0deg, black, transparent);
+  width: 100%;
+  bottom: 0;
 }
-
 .chapterCard .innerCardFooter > .cardText:first-child {
   float: left;
 }
