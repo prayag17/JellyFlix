@@ -92,36 +92,63 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 
 /*Top Bar Transparent*/
 
-.force-scroll {
+body.force-scroll {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
-div[data-role="page"],
-.libraryPage:not(.noSecondaryNavPage) {
-  margin-top: 9em;
-  padding-top: 0px !important;
-  overflow: hidden scroll;
+.skinHeader {
+  position: static;
+  width: 100%;
+  align-self: flex-start;
 }
 
-@media (min-width: 100em) {
-  div[data-role="page"] {
-    margin-top: 5em !important;
-    padding-top: 0px !important;
-    overflow: hidden scroll;
+.mainAnimatedPages {
+  height: 100vh;
+  position: relative !important;
+  overflow: hidden;
+}
+
+.libraryPage:not(.noSecondaryNavPage) {
+  padding: 0 !important;
+}
+
+@media (min-width: 40em) {
+  .dashboardDocument .skinBody {
+    left: 20em;
+    width: calc(100vw - 20em);
   }
 }
 
-div[data-role="page"]:not(.withTabs) {
-  margin-top: 4em !important;
-}
-
-.layout-tv body {
+div[data-role="page"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static;
+  width: 100%;
+  height: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.layout-tv div[data-role="page"] {
-  margin: 0;
+.layout-tv .mainAnimatedPages {
   overflow: visible;
+  mask: none;
+  -webkit-mask: none;
+}
+
+div#videoOsdPage {
+  overflow: hidden !important;
+  margin-top: 0 !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+}
+
+div[data-role="page"]:not(.withTabs) {
+  margin-top: 0 !important;
 }
 
 .skinHeader-withBackground {
