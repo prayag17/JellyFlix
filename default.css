@@ -31,16 +31,6 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   width: 50% !important;
 }
 
-.layout-mobile .portraitCard {
-  width: 50%;
-}
-
-@media all and (min-width: 32em) and (max-width: 100em) {
-  .layout-mobile .portraitCard {
-    width: 50%;
-  }
-}
-
 .emby-input:focus,
 .emby-textarea:focus {
   border-color: var(--accent);
@@ -347,22 +337,6 @@ div#itemDetailPage {
   }
   .section0 .cardText.cardTextCentered.cardText-first {
     height: 2.5em;
-  }
-}
-
-@media (max-width: 62.5em) and (orientation: portrait) {
-  button.cardOverlayButton.cardOverlayButton-br.itemAction.paper-icon-button-light {
-    text-shadow: 0 0 10px black;
-    color: white !important;
-  }
-}
-
-@media (max-width: 62.5em) and (orientation: landscape) {
-  button.cardOverlayButton.cardOverlayButton-br.itemAction.paper-icon-button-light {
-    margin-top: 9em !important;
-    top: 0;
-    text-shadow: 0 0 10px black;
-    color: white;
   }
 }
 
@@ -810,7 +784,30 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .emby-scrollbuttons {
+  z-index: 0;
+}
+
+.sectionTitleContainer {
   z-index: -1;
+}
+
+.layout-mobile .emby-scroller {
+  overflow: scroll !important;
+}
+
+.layout-mobile .innerCardFooter {
+  width: 70%;
+  margin: 0 3%;
+}
+
+.layout-mobile .cardOverlayButton {
+  color: white !important;
+  border: 2px solid var(--accent);
+  margin: 0 2% 2% 0;
+}
+
+.layout-mobile .cardText {
+  opacity: 1;
 }
 
 .cardBox {
@@ -824,6 +821,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-radius: var(--rounding);
   transition: 0.2s;
   z-index: 100;
+}
+
+.layout-mobile .card:hover {
+  display: none !important;
 }
 
 .card:first-child {
@@ -1053,6 +1054,14 @@ div#divRunningTasks {
   display: none;
 }
 
+.cardOverlayButton-br {
+  margin-right: 2%;
+}
+
+.card[data-type="Actor"] {
+  transform: none !important;
+}
+
 .card[data-type="Actor"] .cardBox {
   background: none;
   position: relative;
@@ -1068,6 +1077,7 @@ div#divRunningTasks {
 .card[data-type="Actor"] .cardText {
   position: absolute;
   background: transparent !important;
+  opacity: 1;
 }
 
 .card[data-type="Actor"] .cardImageContainer::after {
