@@ -191,65 +191,21 @@ div#itemBackdrop {
   height: 100% !important;
   z-index: 0;
   position: absolute;
-  background-position: center center;
-  width: 100%;
+  background-position: top right;
+  right: 0;
+  width: 70vw;
   background-size: cover;
   background-attachment: scroll;
+  mask-image: linear-gradient(to right, transparent, black),
+    linear-gradient(to top, transparent, black);
+  -webkit-mask-image: linear-gradient(to right, transparent, black),
+    linear-gradient(to top, transparent, black);
+  mask-composite: source-in;
+  -webkit-mask-composite: source-in;
 }
 
 div#itemBackdrop::after {
-  background: linear-gradient(
-      to top,
-      #181819 0,
-      rgba(24, 24, 24, 0.987) 1.62%,
-      rgba(24, 24, 24, 0.951) 3.1%,
-      rgba(24, 24, 24, 0.896) 4.5%,
-      rgba(24, 24, 24, 0.825) 5.8%,
-      rgba(24, 24, 24, 0.741) 7.06%,
-      rgba(24, 24, 24, 0.648) 8.24%,
-      rgba(24, 24, 24, 0.55) 9.42%,
-      rgba(24, 24, 24, 0.45) 10.58%,
-      rgba(24, 24, 24, 0.352) 11.76%,
-      rgba(24, 24, 24, 0.259) 12.94%,
-      rgba(24, 24, 24, 0.175) 14.2%,
-      rgba(24, 24, 24, 0.104) 15.5%,
-      rgba(24, 24, 24, 0.049) 16.9%,
-      rgba(26, 24, 24, 0.013) 18.38%,
-      rgba(24, 24, 24, 0) 20%
-    ),
-    rgba(24, 24, 24, 0.35) !important;
-}
-
-div#itemBackdrop::before {
-  content: "";
-  top: 0;
-  bottom: 0;
-  right: -200px;
-  left: 0;
-  width: 35%;
-  min-width: 500px;
-  max-width: 800px;
-  position: absolute;
-  background: linear-gradient(
-    to right,
-    #181818 10%,
-    rgba(24, 24, 24, 0.98) 20%,
-    rgba(24, 24, 24, 0.97) 25%,
-    rgba(24, 24, 24, 0.95) 35%,
-    rgba(24, 24, 24, 0.94) 40%,
-    rgba(24, 24, 24, 0.92) 45%,
-    rgba(24, 24, 24, 0.9) 50%,
-    rgba(24, 24, 24, 0.87) 55%,
-    rgba(24, 24, 24, 0.82) 60%,
-    rgba(24, 24, 24, 0.75) 65%,
-    rgba(24, 24, 24, 0.63) 70%,
-    rgba(24, 24, 24, 0.45) 75%,
-    rgba(24, 24, 24, 0.27) 80%,
-    rgba(24, 24, 24, 0.15) 85%,
-    rgba(24, 24, 24, 0.08) 90%,
-    rgba(24, 24, 24, 0.03) 95%,
-    rgba(24, 24, 24, 0) 100%
-  );
+  display: none;
 }
 
 .detailPageSecondaryContainer {
@@ -260,19 +216,24 @@ div#itemBackdrop::before {
 div#itemDetailPage {
   background: #181818;
   overflow-x: hidden;
+  position: relative;
 }
 
 .detailPagePrimaryContent {
   position: relative;
-  width: 50%;
-  padding-left: 1rem;
+  width: 60vw;
   background: transparent;
-  padding-bottom: 5rem;
-  min-height: 42vh;
+  min-height: 68vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   text-shadow: 1px 1px 5px #181818;
+  padding: 0 !important;
+  font-size: 1.3em;
+}
+
+#itemDetailPage .detailVerticalSection:last-child {
+  margin-bottom: 10vh;
 }
 
 .layout-mobile .detailPagePrimaryContent {
@@ -287,13 +248,6 @@ div#itemDetailPage {
   margin-top: 0 !important;
 }
 
-#itemDetailPage .detailVerticalSection {
-  background: #181818;
-  padding-left: 1rem;
-  width: calc(100% - 1rem);
-  margin-left: 0;
-}
-
 .layout-mobile #itemDetailPage .detailVerticalSection {
   background: transparent;
   width: 100%;
@@ -302,7 +256,7 @@ div#itemDetailPage {
 
 .itemName.parentNameLast {
   margin: 0;
-  font-size: 3rem;
+  font-size: calc(135% * 2);
 }
 
 /* Center the mouseover buttons */
@@ -312,56 +266,7 @@ div#itemDetailPage {
   margin: auto;
 }
 
-@media (max-width: 456px) {
-  .layout-mobile .infoText {
-    z-index: 1;
-    margin-top: 15rem;
-  }
-}
-
-@media (max-width: 341px) {
-  .layout-mobile .primaryImageWrapper::before {
-    background: linear-gradient(to top, #181818 30%, transparent);
-  }
-}
-
-/*media queries for 360x640*/
-
-@media (max-device-width: 361px) and (max-device-height: 641px) {
-  .layout-mobile .primaryImageWrapper::before {
-    background: linear-gradient(to top, #181818 25%, transparent) !important;
-  }
-  .detailLogo.lazy.lazy-image-fadein-fast {
-    top: 50% !important;
-  }
-}
-
-.layout-mobile
-  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-  padding-top: 4.5rem !important;
-  padding-bottom: 0 !important;
-}
-
-@media (max-width: 321px) {
-  .layout-mobile .mainDetailButtons,
-  .layout-mobile .infoText {
-    font-size: 80%;
-  }
-}
-
-@media (max-width: 769px) and (min-width: 425px) {
-  .layout-mobile .infoText {
-    margin-top: 24rem;
-  }
-  .primaryImageWrapper::before {
-    background: linear-gradient(to top, #181818 20%, transparent);
-  }
-}
-
 @media (max-width: 62.5em) {
-  .detailPageSecondaryContainer {
-    margin-top: -0.5px;
-  }
   .section0 .cardText.cardTextCentered.cardText-first {
     height: 2.5em;
   }
@@ -371,59 +276,22 @@ div#itemDetailPage {
   .layout-mobile .detailPageSecondaryContainer {
     margin: 0;
   }
-  .detailPagePrimaryContent {
-    width: 55%;
-  }
-  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    margin-top: 0;
-    padding-top: 15rem !important;
-  }
 }
 
-@media (max-height: 816px) {
-  .layout-mobile .primaryImageWrapper::before {
-    background: linear-gradient(to top, #181818 15%, transparent);
-  }
+.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+  font-size: smaller;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
 }
-
-@media (max-height: 641px) {
-  .layout-mobile #itemDetailPage .detailLogo {
-    top: 53%;
-  }
+.layout-mobile .detailPageSecondaryContainer {
+  margin: 0;
 }
-
-@media all and (min-width: 32em) and (max-width: 100em) and (orientation: portrait) {
-  span.material-icons.detailButton-icon.favorite {
-    color: var(--accent);
-    transform: scale(1.3);
-  }
-  .layout-desktop .detailRibbon,
-  .layout-tv .detailRibbon {
-    height: 3em;
-  }
-  .detailPageSecondaryContainer {
-    margin-top: -0.5px;
-  }
-  .layout-mobile .detailPageSecondaryContainer {
-    margin: 0 !important;
-  }
-}
-
-@media all and (max-width: 32em) {
-  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    font-size: smaller;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow: hidden;
-  }
-  .layout-mobile .detailPageSecondaryContainer {
-    margin: 0;
-  }
-  .detailPageWrapperContainer {
-    border-spacing: 0;
-    border-collapse: collapse;
-  }
+.detailPageWrapperContainer {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 5vw;
 }
 
 .layout-mobile .detailPageWrapperContainer {
@@ -1065,16 +933,16 @@ div#divRunningTasks {
 .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
   position: relative;
   top: 0;
-  padding-left: 1rem;
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
   background: transparent;
-  padding-bottom: 13rem;
   font-size: 20px;
-  padding-top: 10rem;
   max-width: 95%;
-  margin-top: calc(24vh + 3%);
+  margin-top: 10vh;
+  padding: 0 !important;
+  height: 15vh;
+  font-size: 135%;
 }
 
 .detailImageContainer .card {
@@ -1418,6 +1286,7 @@ div:not(.paperList) .listItem {
   top: 0;
   left: 0;
   border-radius: 0 !important;
+  background-size: cover;
 }
 
 .listItemImage.listItemImage-large::after {
