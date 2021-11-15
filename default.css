@@ -223,7 +223,7 @@ div#itemDetailPage {
   position: relative;
   width: 60vw;
   background: transparent;
-  min-height: 68vh;
+  min-height: 63vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -719,7 +719,13 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .layout-mobile .card:hover {
-  display: none !important;
+  transform: none !important;
+  box-shadow: none;
+  background: none !important;
+}
+
+.layout-mobile .card:hover .cardScalable {
+  border-radius: var(--rounding) !important;
 }
 
 .card:first-child {
@@ -941,7 +947,7 @@ div#divRunningTasks {
   max-width: 95%;
   margin-top: 10vh;
   padding: 0 !important;
-  height: 15vh;
+  height: 20vh;
   font-size: 135%;
 }
 
