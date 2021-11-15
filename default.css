@@ -295,12 +295,16 @@ div#itemDetailPage {
 }
 
 .layout-mobile .detailPageWrapperContainer {
-  margin-top: 0em;
+  margin: 0 !important;
   z-index: 0;
 }
 
 .layout-mobile .detailPagePrimaryContainer {
   z-index: -1;
+  background: transparent !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  padding: 0 !important;
 }
 
 .layout-mobile .primaryImageWrapper {
@@ -319,28 +323,24 @@ div#itemDetailPage {
 }
 
 .layout-mobile .primaryImageWrapper > img {
-  min-width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  overflow: visible;
+  overflow: hidden;
   -webkit-filter: brightness(65%);
   filter: brightness(65%);
   z-index: -1;
-  max-height: unset;
   -o-object-fit: cover;
   object-fit: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  -webkit-mask-image: linear-gradient(0deg, transparent 15%, black 90%);
+  mask-image: linear-gradient(0deg, transparent 15%, black 90%);
 }
 
 .primaryImageWrapper::before {
   content: "";
-  display: block;
-  background: linear-gradient(to top, #181818 30%, transparent);
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
+  display: none;
 }
 
 .layout-mobile
@@ -1098,6 +1098,10 @@ h2 {
   opacity: 1;
   z-index: -1;
   background-color: #181818;
+}
+
+.backgroundContainer {
+  background-color: #181818 !important;
 }
 
 /*Rounded corners and square hover buttons*/
