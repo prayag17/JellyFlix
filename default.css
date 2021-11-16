@@ -59,11 +59,6 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   box-shadow: none;
 }
 
-.itemProgressBar {
-  background: none;
-  height: 928em;
-}
-
 .emby-checkbox:checked + span + .checkboxOutline {
   background-color: var(--deftraback) !important;
 }
@@ -91,69 +86,6 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 }
 
 /*Top Bar Transparent*/
-
-body.force-scroll {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  justify-content: flex-start;
-  overflow: hidden;
-}
-
-.skinHeader {
-  position: static;
-  width: 100%;
-  align-self: flex-start;
-}
-
-.mainAnimatedPages {
-  height: 100vh;
-  position: relative !important;
-  overflow: hidden;
-}
-
-.libraryPage:not(.noSecondaryNavPage) {
-  padding: 0 !important;
-}
-
-@media (min-width: 40em) {
-  .dashboardDocument .skinBody {
-    left: 20em;
-    width: calc(100vw - 20em);
-  }
-}
-
-div[data-role="page"] {
-  margin: 0 !important;
-  padding: 0 !important;
-  position: static;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.layout-tv .mainAnimatedPages {
-  overflow: visible;
-  mask: none;
-  -webkit-mask: none;
-}
-
-div#videoOsdPage {
-  overflow: hidden !important;
-  margin-top: 0 !important;
-  -webkit-mask: none !important;
-  mask: none !important;
-}
-
-div[data-role="page"]:not(.withTabs) {
-  margin-top: 0 !important;
-}
-
-.skinHeader-withBackground {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
 
 /*Theming Indicators*/
 
@@ -216,7 +148,6 @@ div#itemBackdrop::after {
 div#itemDetailPage {
   background: #181818;
   overflow-x: hidden;
-  position: relative;
 }
 
 .detailPagePrimaryContent {
@@ -230,6 +161,19 @@ div#itemDetailPage {
   text-shadow: 1px 1px 5px #181818;
   padding: 0 !important;
   font-size: 1.3em;
+}
+
+.layout-mobile .itemMiscInfo,
+.layout-mobile .itemName,
+.layout-mobile .mainDetailButtons,
+.layout-mobile .parentName {
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.layout-mobile .nameContainer {
+  font-size: 5.5vw;
 }
 
 #itemDetailPage .detailVerticalSection:last-child {
@@ -272,12 +216,6 @@ div#itemDetailPage {
   }
 }
 
-@media all and (min-width: 32em) and (max-width: 100em) and (orientation: landscape) {
-  .layout-mobile .detailPageSecondaryContainer {
-    margin: 0;
-  }
-}
-
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
   font-size: smaller;
   height: -webkit-fit-content;
@@ -313,13 +251,79 @@ div#itemDetailPage {
 
 .layout-mobile .mainDetailButtons {
   z-index: 1;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
+  margin: 0 5vw;
+  flex-flow: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  grid-gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 5vh;
 }
 
 .layout-mobile .infoText {
-  z-index: 1;
-  margin-top: 29rem;
+  position: static;
+  flex: 0 0 auto;
+  margin: 0 5vw;
+  font-size: 5vw;
+}
+
+.layout-mobile #itemDetailPage .btnPlay,
+.layout-mobile #itemDetailPage .btnResume {
+  width: 100% !important;
+  flex-shrink: 0;
+  background: var(--accent) !important;
+  text-shadow: none;
+  flex-flow: row;
+  font-size: 150%;
+  justify-content: flex-start;
+  grid-gap: 5% !important;
+  padding: 10px !important;
+}
+
+.layout-mobile #itemDetailPage .btnPlay::after {
+  content: "Play";
+}
+.layout-mobile #itemDetailPage .btnResume::after {
+  content: "Resume";
+}
+.layout-mobile #itemDetailPage .btnDownload::after {
+  content: "Download";
+}
+.layout-mobile #itemDetailPage .btnPlayTrailer::after {
+  content: "Trailer";
+}
+.layout-mobile #itemDetailPage .btnInstantMix::after {
+  content: "Mix";
+}
+.layout-mobile #itemDetailPage .btnShuffle::after {
+  content: "Shuffle";
+}
+.layout-mobile #itemDetailPage .btnCancelSeriesTimer::after {
+  content: "Cancle Series";
+}
+.layout-mobile #itemDetailPage .btnCancelTimer::after {
+  content: "Stop Recording";
+}
+.layout-mobile #itemDetailPage .btnPlaystate::after {
+  content: "Watched";
+}
+.layout-mobile #itemDetailPage .btnUserRating::after {
+  content: "Favourite";
+}
+.layout-mobile #itemDetailPage .btnSplitVersions::after {
+  content: "Split";
+}
+.layout-mobile #itemDetailPage .btnMoreCommands::after {
+  content: "More";
+}
+
+.layout-mobile #itemDetailPage .detailButton {
+  width: calc(50% - 5px);
+  background: #101010;
+  justify-content: flex-start;
+  flex-flow: revert;
+  grid-gap: 6px;
 }
 
 .layout-mobile .primaryImageWrapper > img {
@@ -346,6 +350,8 @@ div#itemDetailPage {
 .layout-mobile
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
   font-size: 120%;
+  justify-content: flex-start;
+  align-content: flex-end;
 }
 
 .cardText > .textActionButton {
@@ -1134,14 +1140,9 @@ h2 {
 
 /* Top menu transparency */
 
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+.skinHeader {
   background: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
-  background: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #181818;
 }
 
 .playedIndicator {
