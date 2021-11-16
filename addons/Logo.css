@@ -1,35 +1,53 @@
 #itemDetailPage .detailLogo {
-  position: absolute;
-  left: 1%;
-  top: 5%;
+  position: static;
   background-position: 0 !important;
   display: block !important;
+  height: 20vh;
+  max-width: 45vw;
   width: auto;
-  height: 24vh;
-  max-width: 45%;
-  -webkit-filter: drop-shadow(2px 4px 6px #181818)
-    drop-shadow(-2px 4px 6px #181818);
-  filter: drop-shadow(2px 4px 6px #181818) drop-shadow(-2px 4px 6px #181818);
+  flex-shrink: 0;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+
+div#itemDetailPage {
+  background: #181818;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailPagePrimaryContent {
+  min-height: 60vh !important;
 }
 
 .layout-mobile .detailRibbon {
   margin-top: 0 !important;
 }
 
-.layout-mobile
-  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-  padding-top: 4.5rem !important;
+.hide + .detailPageWrapperContainer .detailPagePrimaryContent {
+  min-height: 70vh !important;
 }
 
 .hide + .detailPageWrapperContainer .detailRibbon {
-  padding-top: 10rem !important;
-  padding-bottom: 13rem !important;
+  position: relative;
+  top: 0;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background: transparent;
+  font-size: 20px;
+  max-width: 95%;
+  margin-top: 10vh;
+  padding: 0 !important;
+  height: 20vh;
+  font-size: 135%;
 }
 
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
 .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-  padding-bottom: 0;
-  padding-top: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 10vh;
 }
 
 #itemDetailPage .itemName.infoText.parentNameLast {
@@ -45,66 +63,9 @@
 }
 
 .layout-mobile #itemDetailPage .detailLogo {
-  z-index: 1;
-  width: 90%;
-  max-width: 90% !important;
-  background-position: 50% !important;
-  left: 50%;
-  top: 37%;
-  transform: translateX(-50%);
-  height: 20%;
+  display: none !important;
 }
 
-@media (max-width: 456px) {
-  .layout-mobile #itemDetailPage .detailLogo {
-    z-index: 1;
-    width: 90%;
-    background-position: 50% !important;
-    left: 50%;
-    top: 37%;
-    transform: translateX(-50%);
-    height: 30%;
-  }
-}
-
-@media (max-width: 321px) {
-  .layout-mobile #itemDetailPage .detailLogo {
-    height: 25%;
-  }
-  .layout-mobile #itemDetailPage .detailLogo {
-    height: 25% !important;
-    top: 50% !important;
-  }
-}
-
-@media (max-width: 769px) and (min-width: 425px) {
-  .layout-mobile #itemDetailPage .detailLogo {
-    height: 35%;
-    top: 22% !important;
-  }
-}
-
-/*IPhone 12 Pro Max*/
-
-@media screen and (max-device-width: 429px) and (max-device-height: 927px) and (-webkit-device-pixel-ratio: 3) {
-  .layout-mobile #itemDetailPage .detailLogo {
-    height: 35%;
-    top: 21% !important;
-  }
-}
-
-/*IPhone 12 Pro*/
-
-@media screen and (max-device-width: 391px) and (max-device-height: 845px) and (-webkit-device-pixel-ratio: 3) {
-  .layout-mobile #itemDetailPage .detailLogo {
-    top: 28%;
-  }
-}
-
-/*IPhone 12 Mini*/
-
-@media screen and (max-device-width: 376px) and (max-device-height: 813px) and (-webkit-device-pixel-ratio: 3) {
-  .layout-mobile #itemDetailPage .detailLogo {
-    top: 33%;
-  }
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+  display: block;
 }

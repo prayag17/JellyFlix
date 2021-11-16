@@ -134,6 +134,7 @@ div#itemBackdrop {
     linear-gradient(to top, transparent, black);
   mask-composite: source-in;
   -webkit-mask-composite: source-in;
+  mask-composite: intersect;
 }
 
 div#itemBackdrop::after {
@@ -147,14 +148,13 @@ div#itemBackdrop::after {
 
 div#itemDetailPage {
   background: #181818;
-  overflow-x: hidden;
 }
 
 .detailPagePrimaryContent {
   position: relative;
   width: 60vw;
   background: transparent;
-  min-height: 63vh;
+  min-height: 70vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -173,7 +173,7 @@ div#itemDetailPage {
 }
 
 .layout-mobile .nameContainer {
-  font-size: 5.5vw;
+  font-size: 6.5vw;
 }
 
 #itemDetailPage .detailVerticalSection:last-child {
@@ -1142,7 +1142,7 @@ h2 {
 
 .skinHeader {
   background: none;
-  background-color: #181818;
+  background-color: #181818 !important;
 }
 
 .playedIndicator {
