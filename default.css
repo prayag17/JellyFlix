@@ -212,10 +212,6 @@ div#itemDetailPage {
   font-size: calc(135% * 2);
 }
 
-.libraryPage:not(.noSecondaryNavPage) {
-  padding-top: 16.5vh !important;
-}
-
 .parentName a {
   text-align: left;
 }
@@ -814,7 +810,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .vertical-wrap {
-  width: 100vw !important;
+  width: 100% !important;
 }
 
 .emby-scroller {
@@ -1158,12 +1154,13 @@ h2 {
 }
 
 .dialog {
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(60px) !important;
-  -webkit-backdrop-filter: blur(60px) !important;
-  -moz-backdrop-filter: blur (60px) !important;
-  -o-backdrop-filter: blur(60px) !important;
-  box-shadow: 0 0 0 2000vw rgb(0 0 0 / 45%), 0 0 20px 4px black;
+  background-color: #181818;
+  overflow: hidden;
+}
+
+.formDialogContent {
+  overflow: scroll;
+  height: 100%;
 }
 
 /* Top menu transparency */
@@ -1226,6 +1223,23 @@ h2 {
   border-right-color: var(--accent);
 }
 
+.dialogContainer .card {
+  background: #000 !important;
+  transform: none !important;
+}
+
+.dailogContainer .cardText {
+  opacity: 1 !important;
+}
+
+.dialogContainer .cardText {
+  opacity: 1;
+}
+
+.dialogContainer .vertical-wrap {
+  width: 100% !important;
+}
+
 /*Episode cards*/
 
 .listItem[data-type="Audio"] .mediaInfoItem::after {
@@ -1247,6 +1261,10 @@ h2 {
   -webkit-box-orient: horizontal;
   margin: -6px;
   width: 100%;
+}
+
+#itemDetailPage .emby-select {
+  box-shadow: none !important;
 }
 
 .listItemImage-large-tv {
@@ -1430,10 +1448,6 @@ div:not(.paperList) .listItem {
   }
 }
 
-.section0 .sectionTitle {
-  padding-top: 60px !important;
-}
-
 .raised.homeLibraryButton:hover {
   transition: -webkit-filter 1s;
   transition: filter 1s;
@@ -1498,14 +1512,6 @@ div:not(.paperList) .listItem {
   }
   .tmla-mask {
     background-color: rgba(0, 0, 0, 0.1);
-  }
-  .dialogBackdropOpened {
-    opacity: 1 !important;
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .dialog {
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    box-shadow: 0 0 20px 4px black;
   }
   .mainDrawer {
     background-color: rgba(0, 0, 0, 0.95);
