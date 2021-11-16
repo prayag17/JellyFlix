@@ -163,6 +163,15 @@ div#itemDetailPage {
   font-size: 1.3em;
 }
 
+.layout-mobile .detailPagePrimaryContent {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  min-height: -webkit-fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
+}
+
 .layout-mobile .itemMiscInfo,
 .layout-mobile .itemName,
 .layout-mobile .mainDetailButtons,
@@ -204,7 +213,11 @@ div#itemDetailPage {
 }
 
 .libraryPage:not(.noSecondaryNavPage) {
-  padding-top: 16.5vh;
+  padding-top: 16.5vh !important;
+}
+
+.parentName a {
+  text-align: left;
 }
 
 /* Center the mouseover buttons */
@@ -1084,6 +1097,12 @@ h2 {
   transition: transform 0.2s, background 0.2s, border-color 0.2s;
 }
 
+.layout-mobile .listItem {
+  flex-wrap: wrap !important;
+  padding: 0 !important;
+  margin: 0;
+}
+
 /* Adjust both "size-adjust" and "size" to modify size */
 
 .headerTabs.sectionTabs {
@@ -1220,14 +1239,14 @@ h2 {
 #itemDetailPage .vertical-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 0 6px !important;
+  padding: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   margin: -6px;
-  width: calc(100% - 6px);
+  width: 100%;
 }
 
 .listItemImage-large-tv {
@@ -1511,6 +1530,7 @@ div:not(.paperList) .listItem {
   background: linear-gradient(0deg, black, transparent);
   width: 100%;
   bottom: 0;
+  margin: 0 !important;
 }
 .chapterCard .innerCardFooter > .cardText:first-child {
   float: left;

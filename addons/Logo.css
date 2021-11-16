@@ -50,11 +50,18 @@ div#itemDetailPage {
   height: 10vh;
 }
 
-#itemDetailPage .itemName.infoText.parentNameLast {
+#itemDetailPage .parentName,
+#itemDetailPage .parentNameLast {
   display: none;
 }
 
-.hide + .detailPageWrapperContainer .itemName {
+.layout-mobile #itemDetailPage .parentName,
+.layout-mobile #itemDetailPage .parentNameLast {
+  display: block;
+}
+
+.hide + .detailPageWrapperContainer .parentName,
+.hide + .detailPageWrapperContainer .parentNameLast {
   display: block !important;
 }
 
