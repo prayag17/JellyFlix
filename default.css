@@ -822,6 +822,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   margin: 5px;
 }
 
+.layout-mobile .itemsContainer {
+  width: 100%;
+  overflow: scroll hidden;
+}
+
 .homeLibraryButton {
   z-index: 100;
 }
