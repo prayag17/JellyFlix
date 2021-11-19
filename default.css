@@ -925,11 +925,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: var(--accent) !important;
 }
 
-#itemDetailPage .button-flat:hover {
-  color: var(--accent);
-  transform: scale(1.5);
-}
-
 .listItem.listItem-border:hover {
   border-color: rgba(0, 0, 0, 0) !important;
   background: #3f3f3f;
@@ -1083,7 +1078,7 @@ h2 {
 }
 
 .tmla-mask {
-  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(to right, black, transparent);
 }
 
 .dialogBackdrop {
@@ -1210,10 +1205,10 @@ h2 {
   background-color: rgba(0, 164, 220, 0.2);
 }
 
+.mainDrawer,
 .mainDrawer.drawer-open {
   box-shadow: none !important;
-  padding-right: 50%;
-  background: linear-gradient(90deg, black 15%, transparent);
+  background: transparent;
 }
 
 .navMenuOption {
