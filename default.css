@@ -1212,15 +1212,40 @@ h2 {
 }
 
 .navMenuOption {
-  border-right-color: rgba(0, 0, 0, 0);
-  border-right-width: 0.5em !important;
-  border-right-style: solid;
+  position: relative;
   border-radius: var(--rounding) !important;
+  grid-gap: 5px;
 }
 
 .navMenuOption:hover {
-  background: var(--deftraback) !important;
-  border-right-color: var(--accent);
+  background: transparent;
+  margin-left: 10px !important;
+}
+
+.navMenuOption::before {
+  content: "";
+  width: 5px;
+  height: 1.5em;
+  background: var(--accent);
+  display: block;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.navMenuOption:hover:before {
+  opacity: 1;
+  height: 1.5em !important;
+}
+
+.navMenuOption-selected::before {
+  opacity: 1;
+  height: 2em;
+}
+
+.navMenuOption-selected {
+  background: transparent !important;
 }
 
 .dialogContainer .card {
