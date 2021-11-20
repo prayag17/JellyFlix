@@ -447,11 +447,17 @@ div#videoOsdPage {
 /*Scroll Bar theme*/
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent) !important;
+  background: #505050 !important;
+  border-radius: 10px !important;
 }
 
 .page {
   padding-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
 }
 
 ::-webkit-scrollbar-track {
