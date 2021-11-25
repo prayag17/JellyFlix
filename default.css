@@ -384,7 +384,7 @@ div#itemDetailPage {
 
 /*Login Page*/
 
-.skinHeader.semiTransparent {
+.skinHeader.semiTransparent.noHeaderRight {
   background-color: transparent !important;
 }
 
@@ -426,6 +426,7 @@ div#loginPage {
   justify-content: center;
   align-items: center;
   padding: 3em !important;
+  max-width: 24em;
 }
 
 #loginPage .readOnlyContent {
@@ -1242,8 +1243,8 @@ h2 {
 /* Top menu transparency */
 
 .skinHeader {
-  background: none;
-  background-color: #181818 !important;
+  background: linear-gradient(to bottom, #181818, transparent);
+  background-color: transparent !important;
 }
 
 .playedIndicator {
