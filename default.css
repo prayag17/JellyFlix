@@ -1112,6 +1112,10 @@ div#divRunningTasks {
   height: 22px;
 }
 
+.cardDefaultText {
+  opacity: 1 !important;
+}
+
 .layout-mobile .card[data-type="Actor"] .cardText-first {
   color: white !important;
 }
