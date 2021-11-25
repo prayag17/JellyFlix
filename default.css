@@ -29,6 +29,12 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 
 #loginPage .squareCard {
   width: 50% !important;
+  background: #181818 !important;
+  transform: none !important;
+}
+
+#loginPage .cardText {
+  opacity: 1;
 }
 
 .emby-input:focus,
@@ -59,8 +65,10 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   box-shadow: none;
 }
 
-.emby-checkbox:checked + span + .checkboxOutline {
-  background-color: var(--deftraback) !important;
+.checkboxOutline {
+  background: var(--accent) !important;
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
 }
 
 /*Theming video page*/
@@ -376,6 +384,10 @@ div#itemDetailPage {
 
 /*Login Page*/
 
+.skinHeader.semiTransparent {
+  background-color: transparent !important;
+}
+
 div#loginPage {
   margin-top: 0 !important;
 }
@@ -405,16 +417,75 @@ div#loginPage {
   margin: 0;
   position: absolute;
   border-radius: 10px;
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3em !important;
 }
 
-@media all and (max-width: 100em) and (orientation: portrait) {
-  #loginPage .padded-left.padded-right.padded-bottom-page {
-    margin-top: 0 !important;
-    width: -webkit-fill-available !important;
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
-  }
+#loginPage .readOnlyContent {
+  padding: 0 !important;
+  width: 100% !important;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.manualLoginForm {
+  height: 100%;
+  width: 100%;
+}
+
+#loginPage .inputContainer {
+  background: #333;
+  border-radius: var(--rounding);
+  height: 4em;
+  position: relative;
+}
+
+#loginPage .inputLabel.inputLabelFocused,
+#loginPage .inputLabel:not(.inputLabel-float) {
+  font-size: 0.8em;
+  left: 4%;
+  top: 4%;
+  transform: none;
+}
+
+.visualLoginForm {
+  width: 100%;
+  position: relative;
+}
+
+#divUsers {
+  flex-flow: revert;
+  overflow: scroll visible;
+  justify-content: flex-start;
+}
+
+#loginPage .emby-input {
+  height: 100%;
+  border: none;
+  background: transparent !important;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none !important;
+  padding: 4% !important;
+  font-size: 1.1em;
+}
+
+#loginPage .inputLabel {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  font-weight: 300;
+  transition: 0.2s ease;
 }
 
 /*Login background with radial gradient overlay to make it look like netflix login*/
@@ -424,7 +495,7 @@ div#loginPage {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 20%),
     linear-gradient(to left, rgba(0, 0, 0, 0.75), transparent 20%),
     linear-gradient(to right, rgba(0, 0, 0, 0.75), transparent 20%),
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/92bb3a0b-7e91-40a0-b27b-f2c3ac9ef6e4/3823cff1-a0ce-4532-b99a-d47d99df9599/US-en-20210322-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/9f09b85f-530e-4090-82c3-a60ea2b3177f/US-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
   background-size: cover !important;
 }
 
@@ -766,7 +837,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   z-index: 50;
 }
 
-.card .cardScalable,
 .card .cardScalable {
   border-radius: var(--rounding);
   overflow: hidden;
