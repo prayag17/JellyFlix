@@ -36,7 +36,7 @@ div#itemDetailPage {
   width: fit-content !important;
   background: transparent;
   font-size: 20px;
-  max-width: 95%;
+  max-width: 100vw;
   margin-top: 10vh;
   padding: 0 !important;
   height: 20vh;
