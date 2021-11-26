@@ -1248,6 +1248,7 @@ h2 {
 .skinHeader {
   background: linear-gradient(to bottom, #181818, transparent);
   background-color: transparent !important;
+  transform: none !important;
 }
 
 .playedIndicator {
