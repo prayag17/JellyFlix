@@ -1346,6 +1346,10 @@ h2 {
   width: 100% !important;
 }
 
+.cardFooter .cardText {
+  opacity: 1;
+}
+
 /*Episode cards*/
 
 .listItem[data-type="Audio"] .mediaInfoItem::after {
