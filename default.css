@@ -1579,8 +1579,7 @@ div:not(.paperList) .listItem {
 
 .paperList,
 .visualCardBox {
-  background-color: #000;
-  border-radius: 5px;
+  background-color: transparent;
 }
 
 .listItemIcon {
@@ -1606,6 +1605,46 @@ div:not(.paperList) .listItem {
 
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
   border-radius: var(--rounding) !important;
+}
+
+.dashboardSections {
+  display: grid;
+  grid-template-areas:
+    "one one two"
+    " three three three";
+  grid-auto-columns: 1fr;
+  grid-gap: 30px;
+}
+
+.dashboardColumn:nth-child(1) {
+  grid-area: one;
+}
+
+.dashboardColumn:nth-child(3) {
+  grid-area: two;
+}
+
+.dashboardColumn:nth-child(2) {
+  grid-area: three;
+}
+
+.activeDevices .card {
+  transform: none !important;
+  border: 5px solid #181818;
+  border-radius: 10px !important;
+}
+
+.dashboardSection {
+  background: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.dashboardColumn.dashboardColumn-2-60.dashboardColumn-3-46 .paperList {
+  font-family: monospace;
+  font-size: 1.5em;
+  padding: 0 !important;
+  color: #ffffffa3;
 }
 
 /*For browsers that don't support backdrop-filter*/
