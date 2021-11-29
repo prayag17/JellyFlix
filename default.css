@@ -215,6 +215,37 @@ div#itemDetailPage {
   text-align: left;
 }
 
+.layout .button-flat:focus,
+.layout-mobile .button-flat:hover {
+  color: #cdcdcd !important;
+}
+
+.button-flat:focus,
+.button-flat:hover {
+  color: var(--accent);
+}
+
+@media (orientation: landscape) {
+  .layout-mobile
+    .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+    flex-flow: row;
+    width: 100% !important;
+  }
+  .layout-mobile .mainDetailButtons {
+    margin: 0 5vh;
+    width: 50vw !important;
+    flex-shrink: 1;
+  }
+  .layout-mobile .infoWrapper.infoText {
+    margin: 0 5vh !important;
+    font-size: 5vh !important;
+    max-width: 50%;
+  }
+  .layout-mobile .nameContainer {
+    font-size: 6.5vh;
+  }
+}
+
 /* Center the mouseover buttons */
 
 #castContent
