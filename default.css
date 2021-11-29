@@ -1121,7 +1121,8 @@ div#divRunningTasks {
   min-height: fit-content !important;
 }
 
-#itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
+.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
+.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
   position: relative;
   top: 0;
   width: -webkit-fit-content !important;
