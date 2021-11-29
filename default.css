@@ -774,6 +774,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .textareaLabel {
   color: #eee;
   font-size: 1.2em;
+  align-items: center;
 }
 
 .inputLabel.inputLabelFocused,
