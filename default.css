@@ -38,8 +38,16 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 }
 
 .emby-input:focus,
-.emby-textarea:focus {
-  border-color: var(--accent);
+.emby-textarea:focus,
+.emby-select:focus {
+  border-color: var(--accent) !important;
+}
+
+.selectArrowContainer {
+  top: 0.6em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #itemDetailPage
@@ -750,19 +758,28 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 /*Hover items*/
 
 .emby-input,
-.emby-textarea {
-  color: inherit;
-  border: 0.07em solid var(--accent);
-  border-radius: var(--rounding);
-  box-shadow: 0 0 8px 0px black !important;
-  background: rgba(0, 0, 0, 0.2) !important;
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
-  text-shadow: 0 0 5px black;
+.emby-textarea,
+.emby-select {
+  box-shadow: none !important;
+  background: #101010 !important;
+  text-shadow: none !important;
+  border: 2.5px solid #101010 !important;
+  padding: calc(1em - 2.5px) !important;
+  color: white !important;
+  transition: 0.2s;
 }
 
-.emby-select-withcolor {
-  border: 0.07em solid var(--accent);
+.inputLabel,
+.selectLabel,
+.textareaLabel {
+  color: #eee;
+  font-size: 1.2em;
+}
+
+.inputLabel.inputLabelFocused,
+.selectLabel.selectLabelFocused,
+.textareaLabel.textareaLabelFocused {
+  color: var(--accent) !important;
 }
 
 .playedIndicator,
@@ -1645,6 +1662,15 @@ div:not(.paperList) .listItem {
   font-size: 1.5em;
   padding: 0 !important;
   color: #ffffffa3;
+}
+
+@media (max-width: 1291px) {
+  .dashboardSections {
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
 }
 
 /*For browsers that don't support backdrop-filter*/
