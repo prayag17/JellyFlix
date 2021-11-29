@@ -254,6 +254,14 @@ div#itemDetailPage {
   .layout-mobile .nameContainer {
     font-size: 6.5vh;
   }
+  .layout-mobile .primaryImageWrapper > img {
+    -webkit-mask-image: linear-gradient(0deg, transparent 0%, black 90%) !important;
+            mask-image: linear-gradient(0deg, transparent 0%, black 90%) !important;
+  }
+}
+
+.layout-mobile .itemName.originalTitle {
+  display: none !important;
 }
 
 /* Center the mouseover buttons */
@@ -319,6 +327,7 @@ div#itemDetailPage {
   flex: 0 0 auto;
   margin: 0 5vw;
   font-size: 5vw;
+  width: calc(100vw - 10vw);
 }
 
 .layout-mobile #itemDetailPage .btnPlay,
