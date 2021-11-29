@@ -44,7 +44,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 }
 
 .selectArrowContainer {
-  top: 0.6em;
+  top: 0.9em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -782,6 +782,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   color: var(--accent) !important;
 }
 
+.listItemIcon.notifications {
+  font-size: 2em;
+}
+
 .playedIndicator,
 .countIndicator {
   border-radius: 5px;
@@ -1163,8 +1167,8 @@ div#divRunningTasks {
 select {
   box-shadow: 0 0 6px 0px black !important;
   background: rgba(0, 0, 0, 0.2) !important;
-  backdrop-filter: blur(50px) !important;
-  -webkit-backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
   text-shadow: 0 0 5px black !important;
 }
 
@@ -1273,8 +1277,6 @@ h2 {
 }
 
 .upNextDialog {
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
   box-shadow: 0 0 8px 5px black;
 }
 
@@ -1696,13 +1698,12 @@ div:not(.paperList) .listItem {
     background: rgba(28, 28, 28, 0.8);
     box-shadow: 0 0 8px black !important;
   }
-  /*Theming Playback data info*/
-  .playerStats {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(90px);
-    -webkit-backdrop-filter: blur(90px);
-    box-shadow: 0 0 8px black;
-  }
+}
+
+/*Theming Playback data info*/
+.playerStats {
+  background: #181818;
+  box-shadow: 0 0 8px black;
 }
 
 /* Chapters */
