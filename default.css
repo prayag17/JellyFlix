@@ -179,15 +179,6 @@ div#itemDetailPage {
   font-size: 1.3em;
 }
 
-.layout-mobile .detailPagePrimaryContent {
-  height: -webkit-fit-content !important;
-  height: -moz-fit-content !important;
-  height: fit-content !important;
-  min-height: -webkit-fit-content !important;
-  min-height: -moz-fit-content !important;
-  min-height: fit-content !important;
-}
-
 .layout-mobile .itemMiscInfo,
 .layout-mobile .itemName,
 .layout-mobile .mainDetailButtons,
@@ -203,14 +194,6 @@ div#itemDetailPage {
 
 #itemDetailPage .detailVerticalSection:last-child {
   margin-bottom: 10vh;
-}
-
-.layout-mobile .detailPagePrimaryContent {
-  width: 100%;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-  padding: 0;
 }
 
 #itemDetailPage .itemExternalLinks {
@@ -819,7 +802,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .layout-mobile .emby-scroller {
-  overflow: scroll !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 .layout-mobile .innerCardFooter {
@@ -935,8 +919,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .layout-mobile .itemsContainer {
-  width: 100%;
+  width: calc(100vw - 6.6%);
   overflow: scroll hidden;
+  padding: 0 3.3%;
 }
 
 .homeLibraryButton {
@@ -1067,8 +1052,22 @@ div#divRunningTasks {
 }
 
 .layout-mobile .detailPageContent {
-  padding-right: 5% !important;
+  padding: 0 !important;
   background: #181818;
+}
+
+.layout-mobile #itemDetailPage .sectionTitle {
+  padding-left: 5%;
+}
+.layout-mobile .detailPagePrimaryContent {
+  padding: 0 5% !important;
+  width: calc(100vw - 10%) !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  min-height: -webkit-fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
 }
 
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
