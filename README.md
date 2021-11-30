@@ -58,13 +58,6 @@
     <h3 align="center">TV Show Title page</h3>
     <img src="https://prayag17.github.io/JellyFlix/img/Title%20Page-TV.jpg">
   </div>
-  <div class="dia">
-  <h3 align="center">Dialogs</h3>
-  <img src="https://prayag17.github.io/JellyFlix/img/Menu.jpg">
-  <img src="https://prayag17.github.io/JellyFlix/img/Dialog-1.jpg">
-  <img src="https://prayag17.github.io/JellyFlix/img/Dialog-2.jpg">
-  <img src="https://prayag17.github.io/JellyFlix/img/Dialog-3.jpg">
-  </div>
 </div>
 <br>
 <div class="faq">
