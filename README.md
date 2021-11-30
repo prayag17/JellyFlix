@@ -39,24 +39,24 @@
 <div class="imagesCont">
   <div class="Login">
     <h3 align="center">Login</h3>
-    <img src="https://prayag17.github.io/JellyFlix/img/Login.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/img/Login.jpg">
   </div>
   <div class="home">
     <h3 align="center">Home Page</h3>
-    <img src="https://prayag17.github.io/JellyFlix/img/Home.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/img/Home.jpg">
   </div>  
   <div class="lib">
     <h3 align="center">Library</h3>
-    <img src="https://prayag17.github.io/JellyFlix/img/Movies.jpg">
-    <img src="https://prayag17.github.io/JellyFlix/img/TV%20Shows.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/img/Movies.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/img/TV%20Shows.jpg">
   </div>
   <div class="titleMov">
     <h3 align="center">Movie Title Page</h3>
-    <img src="https://prayag17.github.io/JellyFlix/img/Title%20Page-Movie.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/img/Title%20Page-Movie.jpg">
   </div>
   <div class="titleTv">
     <h3 align="center">TV Show Title page</h3>
-    <img src="https://prayag17.github.io/JellyFlix/img/Title%20Page-TV.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/img/Title%20Page-TV.jpg">
   </div>
 </div>
 <br>
