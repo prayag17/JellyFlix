@@ -1281,7 +1281,6 @@ select {
 
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
 button.button-flat.btnResume.detailButton.emby-button,
-button.emby-tab-button.emby-button,
 h2 {
   text-shadow: 0 0 5px black;
 }
@@ -1316,6 +1315,45 @@ h2 {
   -ms-text-size-adjust: 130%;
   text-size-adjust: 130%;
   font-size: 130%;
+}
+
+.emby-tab-button.emby-tab-button-active::after {
+  transform: scale(1);
+}
+
+.emby-tab-button::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.emby-tab-button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.1em;
+  -webkit-filter: drop-shadow(2px 4px 6px #181818);
+  filter: drop-shadow(2px 4px 6px #181818);
+}
+
+.emby-tab-button:hover::after {
+  transform: scale(1);
+}
+
+.emby-tabs-slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .pageTitle {
@@ -1389,6 +1427,10 @@ h2 {
 
 .upNextDialog-poster-img {
   border-radius: var(--rounding);
+}
+
+div[data-role="page"].withTabs {
+  padding-top: 10em !important;
 }
 
 /*Minimalistic play buttons*/
