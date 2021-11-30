@@ -1,35 +1,41 @@
 <div align="center">
-<h1>JellyFlix:Best Netflix Like Skin For Jellyfin Which works great on PC and most of the Mobiles!</h1>
-<h3>I am using netflix Sans in this CSS ovride and if I am violating any copyright law then please don't ban it, instead create an issue of it</h3>
-<h4>Use 67% zoom for better experience on PC</h4>  
+<h1>JellyFlix</h1>
+<h3>Looks, Feels and Smells like Netflix</h3>
+<h3>Netflix Theme for Jellyfin</h3>
 </div>
-<h2> To use it, got to Setting ==> Dashboard ==> General and scroll down to custom css and past the following line</h2>
+<br>
+<h2>Usage:</h2>
+<h3> To use it, got to Setting ==> Dashboard ==> General and scroll down to custom css and past the following line</h3>
 
+
+<h3>Base Version:</h3>
+<h3>Auto Update: </h3>
 
 ```css
-@import url("https://prayag17.github.io/JellyFlix/default.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/default.css");
 ```
 
-Use the following code to displa logo also:
+<h3>Custom  Version:</h3>
 
 ```css
-@import url("https://prayag17.github.io/JellyFlix/default.css");
-@import url("https://prayag17.github.io/JellyFlix/Logo.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@<version-number>/default.css");
 ```
-<div class="listCont">
-  <h3 align="center"> Features </h3>
-  <div class="list" style="display: block;">
-    <p>1) Netflix like title page.</p>
-    <p>2) Displays logo instead of text</p>
-    <p>3) Netflix's red color accent.</p>
-    <p>4) Netflix like login.</p>
-    <p>5) Works well on the phone and the web.</p>
-    <p>6) Blured + noise background.</p>
-    <p>7) Transparent Header</p>
-    <p>8) can be used by just one line and more!!</p>
-  </div>
-</div>
 
+<h3>With Logos(recommended):</h3>
+<h3>Auto Update:</h3>
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/default.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@latest/addons/Logo.css");
+```
+
+<h3>Custom Version:</h3>
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@<version-number>/default.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellyFlix@<version-number>/addons/Logo.css");
+```
+<br>
 <div class="imagesCont">
   <div class="Login">
     <h3 align="center">Login</h3>
@@ -43,7 +49,6 @@ Use the following code to displa logo also:
     <h3 align="center">Library</h3>
     <img src="https://prayag17.github.io/JellyFlix/img/Movies.jpg">
     <img src="https://prayag17.github.io/JellyFlix/img/TV%20Shows.jpg">
-    <img src="https://prayag17.github.io/JellyFlix/img/Collections.jpg">
   </div>
   <div class="titleMov">
     <h3 align="center">Movie Title Page</h3>
@@ -62,6 +67,9 @@ Use the following code to displa logo also:
   </div>
 </div>
 <br>
+<div class="faq">
+<h2>The UI feels cluttered? try:</h2><h3>Use 67% zoom for better experience on PC</h3>
+</div>
 <br>
 <div class="note">
   <h2>Note: If you want any things to be changed/added to this skin create and issue with 'Feature Request:' in front of it and I also want to make this skin to be supported by most of the devices, so create an issue if your device doesn't work properly with it. Please provide me the name of your device with it's type in this format-<br></h2>
@@ -71,3 +79,4 @@ Use the following code to displa logo also:
     type: Mobile/TV (Laptop are all supported, use 67% zoom)
   ```
 </div>
+<br>

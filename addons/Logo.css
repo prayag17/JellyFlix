@@ -1,0 +1,78 @@
+#itemDetailPage .detailLogo {
+  position: static;
+  background-position: 0 !important;
+  display: block !important;
+  height: 20vh;
+  max-width: 35vw;
+  width: auto;
+  flex-shrink: 0;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+
+div#itemDetailPage {
+  background: #181818;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailPagePrimaryContent {
+  min-height: 60vh !important;
+}
+
+.layout-mobile .detailRibbon {
+  margin-top: 0 !important;
+}
+
+.hide + .detailPageWrapperContainer .detailPagePrimaryContent {
+  min-height: 70vh !important;
+}
+
+.hide + .detailPageWrapperContainer .detailRibbon {
+  position: relative;
+  top: 0;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background: transparent;
+  font-size: 20px;
+  max-width: 100vw;
+  margin-top: 10vh;
+  padding: 0 !important;
+  height: 20vh;
+  font-size: 135%;
+}
+
+.layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
+.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 10vh;
+}
+
+#itemDetailPage .parentName,
+#itemDetailPage .parentNameLast {
+  display: none;
+}
+
+.layout-mobile #itemDetailPage .parentName,
+.layout-mobile #itemDetailPage .parentNameLast {
+  display: block;
+}
+
+.hide + .detailPageWrapperContainer .parentName,
+.hide + .detailPageWrapperContainer .parentNameLast {
+  display: block !important;
+}
+
+.itemName {
+  margin: 0.5em 0 !important;
+}
+
+.layout-mobile #itemDetailPage .detailLogo {
+  display: none !important;
+}
+
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+  display: block;
+}
