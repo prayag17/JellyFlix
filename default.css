@@ -255,8 +255,12 @@ div#itemDetailPage {
     font-size: 6.5vh;
   }
   .layout-mobile .primaryImageWrapper > img {
-    -webkit-mask-image: linear-gradient(0deg, transparent 0%, black 90%) !important;
-            mask-image: linear-gradient(0deg, transparent 0%, black 90%) !important;
+    -webkit-mask-image: linear-gradient(
+      0deg,
+      transparent 0%,
+      black 90%
+    ) !important;
+    mask-image: linear-gradient(0deg, transparent 0%, black 90%) !important;
   }
 }
 
@@ -426,11 +430,12 @@ div#itemDetailPage {
 /*Login Page*/
 
 .skinHeader.semiTransparent.noHeaderRight {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
 div#loginPage {
   margin-top: 0 !important;
+  overflow: hidden scroll;
 }
 
 #loginPage h1::after {
@@ -501,6 +506,7 @@ div#loginPage {
 .visualLoginForm {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #divUsers {
@@ -541,6 +547,18 @@ div#loginPage {
   background: linear-gradient(to left, #000000bf, #000000bf),
     url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/9f09b85f-530e-4090-82c3-a60ea2b3177f/US-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
   background-size: cover !important;
+}
+
+@media (orientation: landscape) {
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    width: 90vh !important;
+    max-width: 90vh !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    transform: translateX(-50%);
+    top: 0;
+  }
 }
 
 /*Login background with radial gradient overlay to make it look like netflix login*/
@@ -801,8 +819,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   box-shadow: 0 0 black !important;
 }
 
-/*Hover items*/
-
 .emby-input,
 .emby-textarea,
 .emby-select {
@@ -821,6 +837,16 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   color: #eee;
   font-size: 1.2em;
   align-items: center;
+}
+
+.selectContainer {
+  align-items: center;
+}
+
+label.selectLabel {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .inputLabel.inputLabelFocused,
