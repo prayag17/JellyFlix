@@ -93,14 +93,43 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 
 .videoOsdBottom {
   font-size: 110%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
 }
 
-.osdHeader {
+.skinHeader-withBackground.osdHeader {
+  transition: opacity 0.3s ease-out;
+  position: relative;
+  z-index: 1;
   background: linear-gradient(
-    180deg,
-    rgba(16, 16, 16, 0.75),
-    rgba(16, 16, 16, 0)
+    to bottom,
+    rgba(0, 0, 0, 0.75),
+    transparent
   ) !important;
+  color: #eee;
+  height: 7.5em;
+  pointer-events: none;
+}
+
+.osdControls .flex.flex-direction-row.align-items-center {
+  display: grid;
+  grid-template-areas:
+    "one two"
+    "three three";
+}
+
+.osdControls .flex.flex-direction-row.align-items-center > *:nth-child(1) {
+  grid-area: one;
+  justify-self: flex-start;
+}
+
+.osdControls .flex.flex-direction-row.align-items-center > *:nth-child(2) {
+  grid-area: three;
+}
+
+.osdControls .flex.flex-direction-row.align-items-center > *:nth-child(3) {
+  grid-area: two;
+  justify-self: flex-end;
+  padding-right: 0.5em;
 }
 
 .layout-desktop .osdControls {
@@ -110,8 +139,6 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 .mdl-slider::-webkit-slider-thumb {
   background: var(--accent);
 }
-
-/*Top Bar Transparent*/
 
 /*Theming Indicators*/
 
@@ -776,10 +803,6 @@ video:cue {
 }
 
 .mdl-slider::-ms-thumb {
-  border-radius: var(--rounding);
-}
-
-.mdl-slider::-webkit-slider-thumb {
   border-radius: var(--rounding);
 }
 
@@ -1821,31 +1844,6 @@ div:not(.paperList) .listItem {
       "one"
       "two"
       "three";
-  }
-}
-
-/*For browsers that don't support backdrop-filter*/
-
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .videoOsdBottom {
-    background-color: rgba(0, 0, 0, 0.95);
-  }
-  .osdHeader {
-    background: rgba(0, 0, 0, 0.95) !important;
-  }
-  .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  .tmla-mask {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  .mainDrawer {
-    background-color: rgba(0, 0, 0, 0.95);
-    box-shadow: none;
-  }
-  .playerStats {
-    background: rgba(28, 28, 28, 0.8);
-    box-shadow: 0 0 8px black !important;
   }
 }
 
