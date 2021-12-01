@@ -933,6 +933,33 @@ label.selectLabel {
   z-index: 100;
 }
 
+@media (min-width: 156.25em) {
+  .backdropCard {
+    width: calc(16.666666666666668% - 10px);
+  }
+}
+
+@media (min-width: 100em) {
+  .backdropCard {
+    width: calc(20% - 10px);
+  }
+}
+@media (min-width: 75em) {
+  .backdropCard {
+    width: calc(25% - 10px);
+  }
+}
+@media (min-width: 48.125em) {
+  .backdropCard {
+    width: calc(33.333333333333336% - 10px);
+  }
+}
+@media (min-width: 25em) {
+  .backdropCard {
+    width: calc(50% - 10px);
+  }
+}
+
 .card.show-animation:focus > .cardBox {
   transform: scale(1) !important;
 }
