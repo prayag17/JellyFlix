@@ -1434,6 +1434,12 @@ h2 {
   right: 1em;
 }
 
+@media (min-width: 100em) {
+  .headerTabs {
+    margin-top: -3.3em;
+  }
+}
+
 .emby-tab-button {
   position: relative;
   padding: 1em;
