@@ -960,6 +960,61 @@ label.selectLabel {
   }
 }
 
+.portraitCard {
+  width: calc(33.333333333333336% - 10px);
+}
+
+@media (min-width: 31.25em) {
+  .portraitCard,
+  .smallBackdropCard,
+  .squareCard {
+    width: calc(33.333333333333336% - 10px);
+  }
+}
+@media (min-width: 43.75em) {
+  .portraitCard,
+  .squareCard {
+    width: calc(25% - 10px);
+  }
+}
+@media (min-width: 50em) {
+  .portraitCard,
+  .squareCard {
+    width: calc(20% - 10px);
+  }
+}
+@media (min-width: 75em) {
+  .portraitCard,
+  .squareCard {
+    width: calc(16.666666666666668% - 10px);
+  }
+}
+@media (min-width: 87.5em) {
+  .portraitCard,
+  .smallBackdropCard,
+  .squareCard {
+    width: calc(14.285714285714286% - 10px);
+  }
+}
+@media (min-width: 100em) {
+  .portraitCard,
+  .squareCard {
+    width: calc(12.5% - 10px);
+  }
+}
+@media (min-width: 120em) {
+  .portraitCard,
+  .squareCard {
+    width: calc(11.11111111111111% - 10px);
+  }
+}
+@media (min-width: 131.25em) {
+  .portraitCard,
+  .squareCard {
+    width: calc(10% - 10px);
+  }
+}
+
 .card.show-animation:focus > .cardBox {
   transform: scale(1) !important;
 }
@@ -1037,8 +1092,8 @@ label.selectLabel {
 
 .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
   padding: 0 !important;
-  margin: 0 0 0 3.3% !important;
-  width: 100vw;
+  margin: 0 3.3% !important;
+  width: 89vw !important;
 }
 
 .vertical-wrap {
@@ -1052,12 +1107,6 @@ label.selectLabel {
 .card,
 .homeLibraryButton {
   margin: 5px;
-}
-
-.layout-mobile .itemsContainer {
-  width: calc(100vw - 6.6%);
-  overflow: scroll hidden;
-  padding: 0 3.3%;
 }
 
 .homeLibraryButton {
@@ -1373,20 +1422,21 @@ h2 {
 
 .emby-tab-button::after {
   content: "";
-  width: 100%;
+  width: calc(100% - 2em);
+  position: absolute;
   height: 4px;
   background: var(--accent);
   border-radius: 10px;
   transform: scaleX(0);
   transition: 0.2s;
+  left: 1em;
+  bottom: 0.75em;
+  right: 1em;
 }
 
 .emby-tab-button {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
+  position: relative;
+  padding: 1em;
   color: white;
   font-size: 1.1em;
   -webkit-filter: drop-shadow(2px 4px 6px #181818);
@@ -1397,22 +1447,9 @@ h2 {
   transform: scale(1);
 }
 
-.emby-tabs-slider {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
 .pageTitle {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.emby-tab-button {
-  padding: 1.75em 1.7em;
 }
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
