@@ -29,24 +29,23 @@ div#itemDetailPage {
 }
 
 .hide + .detailPageWrapperContainer .detailRibbon {
-  position: relative;
+  position: relative !important;
   top: 0;
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
   background: transparent;
-  font-size: 20px;
-  max-width: 100vw;
-  margin-top: 10vh;
+  max-width: 100vw !important;
+  margin-top: 10vh !important;
   padding: 0 !important;
-  height: 20vh;
-  font-size: 135%;
+  height: 20vh !important;
+  font-size: 135% !important;
 }
 
 .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer,
 .layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   height: 10vh;
 }
 
@@ -75,4 +74,8 @@ div#itemDetailPage {
 
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
   display: block;
+}
+
+#itemDetailPage .detailLogo.hide {
+  display: none !important;
 }
