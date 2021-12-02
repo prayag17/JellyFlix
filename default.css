@@ -1496,7 +1496,7 @@ h2 {
 
 .dialog {
   background-color: #181818;
-  overflow: hidden;
+  overflow: auto !important;
 }
 
 .formDialogContent {
