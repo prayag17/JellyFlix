@@ -902,7 +902,7 @@ label.selectLabel {
 
 .layout-mobile .emby-scroller {
   padding: 0 !important;
-  overflow: hidden !important;
+  overflow: auto !important;
 }
 
 .layout-mobile .innerCardFooter {
