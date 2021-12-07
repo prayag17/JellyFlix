@@ -657,13 +657,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 200;
-    src: url('/fonts/cairo-v14-arabic-200.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-200.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-200.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-200.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-200.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-200.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-200.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-200.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-200.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-200.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
@@ -674,13 +674,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 300;
-    src: url('/fonts/cairo-v14-arabic-300.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-300.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-300.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-300.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-300.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-300.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-300.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-300.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
@@ -691,13 +691,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/cairo-v14-arabic-regular.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-regular.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-regular.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
@@ -708,13 +708,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
-    src: url('/fonts/cairo-v14-arabic-600.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-600.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-600.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-600.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-600.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-600.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-600.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-600.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
@@ -725,13 +725,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 500;
-    src: url('/fonts/cairo-v14-arabic-500.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-500.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-500.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-500.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-500.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-500.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-500.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-500.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
@@ -742,13 +742,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 700;
-    src: url('/fonts/cairo-v14-arabic-700.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-700.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-700.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-700.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-700.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-700.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-700.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-700.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
@@ -759,13 +759,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 800;
-    src: url('/fonts/cairo-v14-arabic-800.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-800.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-800.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-800.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-800.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-800.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-800.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-800.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-800.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-800.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
@@ -776,13 +776,13 @@ div#videoOsdPage {
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 900;
-    src: url('/fonts/cairo-v14-arabic-900.eot');
+    src: url('http://localhost:8080/jf/fonts/cairo-v14-arabic-900.eot');
     /* IE9 Compat Modes */
-    src: local(''), url('/fonts/cairo-v14-arabic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/fonts/cairo-v14-arabic-900.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/cairo-v14-arabic-900.woff') format('woff'), /* Modern Browsers */
-    url('/fonts/cairo-v14-arabic-900.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('/fonts/cairo-v14-arabic-900.svg#Cairo') format('svg');
+    src: local(''), url('http://localhost:8080/jf/fonts/cairo-v14-arabic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-900.woff2') format('woff2'), /* Super Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-900.woff') format('woff'), /* Modern Browsers */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('http://localhost:8080/jf/fonts/cairo-v14-arabic-900.svg#Cairo') format('svg');
     /* Legacy iOS */
 }
 
