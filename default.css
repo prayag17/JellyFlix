@@ -84,9 +84,18 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 }
 
 .checkboxOutline {
-  background: var(--accent) !important;
-  background-color: var(--accent) !important;
-  border-color: var(--accent) !important;
+  background: #737373 !important;
+  border: none !important;
+}
+
+span.material-icons.checkboxIcon.checkboxIcon-checked.check {
+  background: #eee;
+  color: black;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
 }
 
 /*Theming video page*/
@@ -563,6 +572,7 @@ div#loginPage {
   box-shadow: none !important;
   padding: 4% !important;
   font-size: 1.1em;
+  border: none !important;
 }
 
 #loginPage .inputLabel {
@@ -573,6 +583,12 @@ div#loginPage {
   font-size: 1.5em;
   font-weight: 300;
   transition: 0.2s ease;
+  color: #8c8c8c;
+}
+
+#loginPage .inputContainer:focus,
+#loginPage .inputContainer:focus-within {
+  background: #454545;
 }
 
 .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
