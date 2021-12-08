@@ -2,7 +2,7 @@
 
 :root {
   --deftraback: rgba(229, 9, 20, 0.2) !important;
-  --rounding: 5px;
+  --rounding: 3px;
   --accent: #e50914;
 }
 
@@ -16,6 +16,11 @@
 ::selection {
   background: var(--accent);
   text-shadow: none;
+}
+
+.force-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* General focus element color */
@@ -39,7 +44,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 
 #loginPage .squareCard {
   width: 50% !important;
-  background: #181818 !important;
+  background: rgb(20, 20, 20) !important;
   transform: none !important;
 }
 
@@ -62,7 +67,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 
 #itemDetailPage
   button.cardImageContainer.coveredImage.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast {
-  border-radius: 5px;
+  border-radius: var(--rounding);
 }
 
 /*cardbox border-radius change*/
@@ -75,7 +80,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
   button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .vertical-wrap button.cardImageContainer.coveredImage.cardContent,
 .emby-scroller button.cardImageContainer {
-  border-radius: 5px 5px 0px 0px !important;
+  border-radius: var(--rounding) var(--rounding) 0px 0px !important;
 }
 
 .cardBox:not(.visualCardBox) .cardPadder,
@@ -151,21 +156,20 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
 
 .playedIndicator,
 .countIndicator {
-  border-radius: 5px;
-  box-shadow: 0 0 15px -2px black;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 25px 25px;
+}
+
+.cardIndicators {
+  right: 0;
+  top: 0;
 }
 
 .countIndicator,
 .fullSyncIndicator,
 .playedIndicator {
-  background: #ffffffad;
-  color: var(--accent);
-}
-
-.playedIndicator {
-  background: var(--accent);
-  color: white;
-  box-shadow: 0 0 15px -2px black;
+  background: linear-gradient(-135deg, rgba(40, 40, 40) 50%, transparent 50%);
 }
 
 button.emby-tab-button.emby-button.emby-tab-button-active:hover {
@@ -207,7 +211,7 @@ div#itemBackdrop::after {
 }
 
 div#itemDetailPage {
-  background: #181818;
+  background: rgb(20, 20, 20);
 }
 
 .detailPagePrimaryContent {
@@ -218,7 +222,7 @@ div#itemDetailPage {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  text-shadow: 1px 1px 5px #181818;
+  text-shadow: 1px 1px 5px rgb(20, 20, 20);
   padding: 0 !important;
   font-size: 1.3em;
 }
@@ -673,229 +677,74 @@ div#videoOsdPage {
 }
 
 /*Fonts */
-
-/* cairo-200 - arabic */
-
 @font-face {
-  font-family: "Cairo";
-  font-style: normal;
-  font-weight: 200;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-200.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-200.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-200.woff2")
+  font-family: "Netflix Sans";
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
       format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-200.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-200.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-200.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
 }
-
-/* cairo-300 - arabic */
-
 @font-face {
-  font-family: "Cairo";
-  font-style: normal;
+  font-family: "Netflix Sans";
   font-weight: 300;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-300.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-300.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-300.woff2")
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
       format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-300.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-300.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-300.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
 }
-
-/* cairo-regular - arabic */
-
 @font-face {
-  font-family: "Cairo";
-  font-style: normal;
+  font-family: "Netflix Sans";
   font-weight: 400;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.woff2")
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
       format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-regular.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
 }
-
-/* cairo-600 - arabic */
-
 @font-face {
-  font-family: "Cairo";
-  font-style: normal;
-  font-weight: 600;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-600.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-600.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-600.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-600.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-600.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-600.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
-}
-
-/* cairo-500 - arabic */
-
-@font-face {
-  font-family: "Cairo";
-  font-style: normal;
-  font-weight: 500;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-500.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-500.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-500.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-500.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-500.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-500.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
-}
-
-/* cairo-700 - arabic */
-
-@font-face {
-  font-family: "Cairo";
-  font-style: normal;
+  font-family: "Netflix Sans";
   font-weight: 700;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-700.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-700.woff2")
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
       format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-700.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-700.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-700.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
 }
-
-/* cairo-800 - arabic */
-
 @font-face {
-  font-family: "Cairo";
-  font-style: normal;
+  font-family: "Netflix Sans";
   font-weight: 800;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-800.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-800.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-800.woff2")
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
       format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-800.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-800.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-800.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
 }
-
-/* cairo-900 - arabic */
-
 @font-face {
-  font-family: "Cairo";
-  font-style: normal;
+  font-family: "Netflix Sans";
   font-weight: 900;
-  src: url("http://localhost:8080/jf/fonts/cairo-v14-arabic-900.eot");
-  /* IE9 Compat Modes */
-  src: local(""),
-    url("http://localhost:8080/jf/fonts/cairo-v14-arabic-900.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-900.woff2")
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
       format("woff2"),
-    /* Super Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-900.woff")
-      format("woff"),
-    /* Modern Browsers */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-900.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("http://localhost:8080/jf/fonts/cairo-v14-arabic-900.svg#Cairo")
-      format("svg");
-  /* Legacy iOS */
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
 }
-
 body,
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Cairo" !important;
+  font-family: "Netflix Sans", sans-serif !important;
 }
 
-/*Subtitle Fonts (Cairo Medium) thanks the u/Edgementality-https://bit.ly/33slrSa*/
+/*Subtitle Fonts (Netflix Sans Medium) thanks the u/Edgementality-https://bit.ly/33slrSa*/
 
 /*Firefox*/
 
 .videoSubtitles {
-  font-family: "Cairo", sans-serif !important;
+  font-family: "Netflix Sans", sans-serif !important;
   font-weight: 700 !important;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
 }
@@ -903,7 +752,7 @@ h4 {
 /*Chrome, Edge Chromium & Saffari*/
 
 video::-webkit-media-text-track-display {
-  font-family: "Cairo", sans-serif !important;
+  font-family: "Netflix Sans", sans-serif !important;
   font-weight: 700 !important;
   text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
 }
@@ -911,13 +760,13 @@ video::-webkit-media-text-track-display {
 /*backup for subtitles*/
 
 video::-webkit-media-text-track-container {
-  font-family: "Cairo", sans-serif !important;
+  font-family: "Netflix Sans", sans-serif !important;
   font-weight: 700 !important;
   text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
 }
 
 video:cue {
-  font-family: "Cairo", sans-serif !important;
+  font-family: "Netflix Sans", sans-serif !important;
   font-weight: 700 !important;
   text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
 }
@@ -1062,12 +911,6 @@ label.selectLabel {
 
 .listItemIcon.notifications {
   font-size: 2em;
-}
-
-.playedIndicator,
-.countIndicator {
-  border-radius: 5px;
-  box-shadow: 0 0 5px 1px black;
 }
 
 .actionSheetMenuItem:hover {
@@ -1249,7 +1092,7 @@ label.selectLabel {
 }
 
 .paper-icon-button-light.cardOverlayButton {
-  background: #181818;
+  background: rgb(20, 20, 20);
   border-radius: 100% !important;
 }
 
@@ -1359,12 +1202,12 @@ label.selectLabel {
 
 .paper-icon-button-light:hover:not(:disabled) {
   color: var(--accent);
-  background: #181818;
+  background: rgb(20, 20, 20);
 }
 
 .button-flat {
   border-radius: var(--rounding) !important;
-  text-shadow: 0 0 10px #181818;
+  text-shadow: 0 0 10px rgb(20, 20, 20);
 }
 
 #indexPage .homeLibraryButton {
@@ -1416,7 +1259,7 @@ div#divRunningTasks {
 
 .detailPageContent {
   text-shadow: none;
-  background: #181818;
+  background: rgb(20, 20, 20);
   background: transparent;
   padding-left: 0;
   padding-right: 0 !important;
@@ -1428,7 +1271,7 @@ div#divRunningTasks {
 
 .layout-mobile .detailPageContent {
   padding: 0 !important;
-  background: #181818;
+  background: rgb(20, 20, 20);
 }
 
 .layout-mobile #itemDetailPage .sectionTitle {
@@ -1636,8 +1479,8 @@ h2 {
   padding: 1em;
   color: white;
   font-size: 1.1em;
-  -webkit-filter: drop-shadow(2px 4px 6px #181818);
-  filter: drop-shadow(2px 4px 6px #181818);
+  -webkit-filter: drop-shadow(2px 4px 6px rgb(20, 20, 20));
+  filter: drop-shadow(2px 4px 6px rgb(20, 20, 20));
 }
 
 .emby-tab-button:hover::after {
@@ -1658,11 +1501,11 @@ h2 {
 .backgroundContainer.withBackdrop {
   opacity: 1;
   z-index: -1;
-  background-color: #181818;
+  background-color: rgb(20, 20, 20);
 }
 
 .backgroundContainer {
-  background-color: #181818 !important;
+  background-color: rgb(20, 20, 20) !important;
 }
 
 /*Rounded corners and square hover buttons*/
@@ -1685,7 +1528,7 @@ h2 {
 }
 
 .dialog {
-  background-color: #181818;
+  background-color: rgb(20, 20, 20);
   overflow: auto !important;
 }
 
@@ -1696,18 +1539,30 @@ h2 {
 /* Top menu transparency */
 
 .skinHeader {
-  background: #181818 !important;
-  box-shadow: 0px 12px 10px #181818;
+  background: linear-gradient(
+    to bottom,
+    rgb(5, 5, 5),
+    rgb(20, 20, 20)
+  ) !important;
 }
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent {
-  background: linear-gradient(to bottom, #181818, transparent) !important;
+  background: linear-gradient(
+    to bottom,
+    rgb(20, 20, 20),
+    transparent
+  ) !important;
   box-shadow: none !important;
   transform: none !important;
 }
 
-.playedIndicator {
-  background: var(--accent);
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.headroom:not(.noHomeButtonHeader) {
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20),
+    transparent
+  ) !important;
+  transform: none !important;
 }
 
 .upNextDialog {
@@ -1965,7 +1820,7 @@ div:not(.paperList) .listItem {
 }
 
 #itemDetailPage::-webkit-scrollbar-track-piece {
-  background: #181818;
+  background: rgb(20, 20, 20);
 }
 
 .listItemImageButton.itemAction.paper-icon-button-light {
@@ -2081,7 +1936,7 @@ div:not(.paperList) .listItem {
 
 .activeDevices .card {
   transform: none !important;
-  border: 5px solid #181818;
+  border: 5px solid rgb(20, 20, 20);
   border-radius: 10px !important;
 }
 
@@ -2107,7 +1962,7 @@ div:not(.paperList) .listItem {
 /*Theming Playback data info*/
 
 .playerStats {
-  background: #181818;
+  background: rgb(20, 20, 20);
   box-shadow: 0 0 8px black;
 }
 
