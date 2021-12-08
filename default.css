@@ -1679,8 +1679,13 @@ h2 {
 /* Top menu transparency */
 
 .skinHeader {
-  background: linear-gradient(to bottom, #181818, transparent);
-  background-color: transparent !important;
+  background: #181818 !important;
+  box-shadow: 0px 12px 10px #181818;
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent {
+  background: linear-gradient(to bottom, #181818, transparent) !important;
+  box-shadow: none !important;
   transform: none !important;
 }
 
