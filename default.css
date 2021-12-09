@@ -469,6 +469,8 @@ div#itemDetailPage {
   font-size: 120%;
   justify-content: flex-start;
   align-content: flex-end;
+  margin-top: 0 !important;
+  height: 100vh !important;
 }
 
 .cardText > .textActionButton {
@@ -478,6 +480,9 @@ div#itemDetailPage {
   text-overflow: ellipsis;
 }
 
+div[data-type="Episode"] .cardText {
+  opacity: 1;
+}
 /*Login Page*/
 
 .skinHeader.semiTransparent.noHeaderRight {
