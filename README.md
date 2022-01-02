@@ -5,7 +5,7 @@
 </div>
 <br>
 <h2>Usage:</h2>
-<h3> To use it, got to Setting ==> Dashboard ==> General and scroll down to custom css and past the following line</h3>
+<h3> To use it, got to Setting ==> Dashboard ==> General and scroll down to custom css and paste the following line</h3>
 
 
 <h3>Base Version:</h3>
