@@ -1561,7 +1561,7 @@ h2 {
   transform: none !important;
 }
 
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.headroom:not(.noHomeButtonHeader) {
+body:not(.withSectionTabs) > .skinHeader {
   background: linear-gradient(
     to bottom,
     rgba(20, 20, 20),
