@@ -1,0 +1,25 @@
+.emby-tab-button::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 10px;
+  transform: translateX(100%) !important;
+  transition: 0.35s ease-in-out;
+  left: 0;
+  bottom: 0.75em;
+  right: 0;
+  visibility: hidden;
+}
+.emby-tab-button:hover::after {
+  transform: translateX(-0%) !important;
+  visibility: visible;
+}
+.emby-tab-button:hover ~ .emby-tab-button::after {
+  transform: translateX(-100%) !important;
+}
+.emby-tab-button.emby-tab-button-active::after {
+  transform: translateX(0%) !important;
+  visibility: visible;
+}
