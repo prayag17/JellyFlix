@@ -48,9 +48,18 @@ div#itemDetailPage {
   height: 10vh;
 }
 
-#itemDetailPage .parentName,
-#itemDetailPage .parentNameLast {
-  display: none;
+:not(.hide) + .detailPageWrapperContainer .parentName,
+:not(.hide) + .detailPageWrapperContainer .parentNameLast,
+:not(.hide) + .detailPageWrapperContainer .parentName > *,
+:not(.hide) + .detailPageWrapperContainer .parentNameLast > * {
+  font-size: 0;
+  display: block;
+  position: fixed;
+  background: transparent;
+  width: 35vw;
+  height: 20vh;
+  top: 10vh;
+  left: 5vw;
 }
 
 .layout-mobile #itemDetailPage .parentName,
