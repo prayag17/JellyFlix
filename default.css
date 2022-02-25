@@ -1787,6 +1787,13 @@ div:not(.paperList) .listItem {
 
 .layout-mobile #itemDetailPage .vertical-list {
   grid-template-columns: 100%;
+  width: 90vw;
+  margin: 0 auto !important;
+}
+
+.listItemIndicators {
+  top: 0;
+  right: 0;
 }
 
 .listItem-overview {
@@ -1810,6 +1817,14 @@ div:not(.paperList) .listItem {
 
 .layout-mobile .listItem-bottomoverview {
   padding: 0 10px;
+}
+
+.layout-mobile .itemsContainer {
+  padding: 0 10px;
+}
+
+.layout-mobile .itemsContainer > *:last-child {
+  padding-right: 10px !important;
 }
 
 .listItemBody.itemAction {
