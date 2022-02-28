@@ -1125,6 +1125,16 @@ label.selectLabel {
   box-shadow: 0 0 20px black;
 }
 
+.layout-tv .homeLibraryButton:focus,
+.layout-tv .card:focus {
+  transform: none !important;
+  border: 5px solid white;
+}
+
+.layout-tv .emby-scroller {
+  overflow: hidden !important;
+}
+
 .homeLibraryButton,
 .card:hover,
 .card:focus {
