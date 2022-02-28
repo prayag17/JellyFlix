@@ -306,6 +306,55 @@ div#itemDetailPage {
   display: none !important;
 }
 
+.layout-tv .backdropContainer {
+  display: block !important;
+  z-index: -1;
+}
+
+.layout-tv .backgroundContainer.withBackdrop {
+  background-color: transparent !important;
+}
+
+.layout-tv div#itemDetailPage {
+  background: transparent;
+}
+
+.layout-tv div#itemBackdrop {
+  width: 100vw;
+  height: 100vh !important;
+  background: linear-gradient(
+      to left,
+      transparent,
+      rgb(20 20 20 / 0.5),
+      rgb(20, 20, 20)
+    ),
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgb(20 20 20 / 0.5),
+      rgb(20, 20, 20)
+    );
+  z-index: -1;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  display: block;
+  position: fixed;
+  top: 0;
+}
+
+.layout-tv .mainDetailButtons {
+  height: 10vh;
+}
+
+.layout-tv .mainDetailButtons > * {
+  height: 10vh;
+  width: 10vh;
+}
+
+.layout-tv div[data-role="page"]:not(#itemDetailPage) > * {
+  background: rgb(20, 20, 20);
+}
+
 /* Center the mouseover buttons */
 
 #castContent
@@ -1131,6 +1180,20 @@ label.selectLabel {
   border: 5px solid white;
 }
 
+.layout-tv .card {
+  border-radius: 10px !important;
+}
+
+.layout-tv .card[data-type="Actor"] {
+  padding: 10px;
+  position: relative;
+  height: 16em;
+}
+
+.layout-tv .card[data-type="Actor"] .cardPadder {
+  display: none !important;
+}
+
 .layout-tv .emby-scroller {
   overflow: hidden !important;
 }
@@ -1863,6 +1926,48 @@ div:not(.paperList) .listItem {
   opacity: 100% !important;
 }
 
+.layout-tv #itemDetailPage .vertical-list {
+  grid-template-columns: 1fr;
+}
+
+.layout-tv .emby-scroller {
+  overflow: hidden !important;
+}
+
+.layout-tv .listItem[data-type="Episode"] {
+  padding: 7.5px !important;
+}
+
+.listItemImage-large-tv {
+  width: 18% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
+.layout-tv .listItemBodyText {
+  font-size: 100% !important;
+}
+
+.layout-tv .listItemBodyText.listItem-overview {
+  line-height: 1.2;
+}
+
+.layout-tv .listItemImage.listItemImage-large::after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 55px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 5%, transparent 95%);
+}
+
+.layout-tv .listItem:focus {
+  transform: none !important;
+  background: none !important;
+  border: 5px solid white;
+  border-radius: 10px;
+}
 /* My Media Styling */
 
 .section0 button.itemAction.textActionButton {
