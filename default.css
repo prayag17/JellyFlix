@@ -1198,6 +1198,41 @@ label.selectLabel {
   overflow: hidden !important;
 }
 
+.layout-tv .card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid white;
+  transform: translateY(100%);
+  visibility: hidden;
+  z-index: 1000;
+  will-change: transform;
+  transition: 0.275s;
+  border-radius: 10px;
+}
+
+.layout-tv .card:focus::after {
+  transform: translateX(0) !important;
+  visibility: visible;
+}
+
+.layout-tv .card:focus ~ .card::after {
+  transform: translateX(-100%) !important;
+}
+
+.layout-tv .verticalSection:focus-within ~ .verticalSection .card::after,
+.layout-tv .verticalSection:focus-within ~ .section5 .card::after {
+  transform: translateY(-100%);
+}
+
+.layout-tv .verticalSection:focus-within .card::after {
+  transform: translateX(100%);
+}
+
 .homeLibraryButton,
 .card:hover,
 .card:focus {
