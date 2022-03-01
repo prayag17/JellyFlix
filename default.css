@@ -351,10 +351,6 @@ div#itemDetailPage {
   width: 10vh;
 }
 
-.layout-tv div[data-role="page"]:not(#itemDetailPage) > * {
-  background: rgb(20, 20, 20);
-}
-
 /* Center the mouseover buttons */
 
 #castContent
@@ -1108,10 +1104,6 @@ label.selectLabel {
   transform: scale(1) !important;
 }
 
-.layout-tv .cardBox {
-  height: 100%;
-}
-
 .layout-mobile .card:hover {
   transform: none !important;
   box-shadow: none;
@@ -1177,11 +1169,16 @@ label.selectLabel {
 .layout-tv .homeLibraryButton:focus,
 .layout-tv .card:focus {
   transform: none !important;
-  border: 5px solid white;
 }
 
 .layout-tv .card {
   border-radius: 10px !important;
+  margin: 0px !important;
+  background: transparent !important;
+}
+
+.layout-tv .card:focus {
+  background: transparent !important;
 }
 
 .layout-tv .card[data-type="Actor"] {
@@ -1198,7 +1195,8 @@ label.selectLabel {
   overflow: hidden !important;
 }
 
-.layout-tv .card::after {
+.layout-tv .card::before {
+  box-sizing: border-box;
   content: "";
   width: 100%;
   height: 100%;
@@ -1206,31 +1204,49 @@ label.selectLabel {
   position: absolute;
   top: 0;
   left: 0;
-  border: 5px solid white;
+  right: 0;
+  border: 3px solid white;
   transform: translateY(100%);
   visibility: hidden;
   z-index: 1000;
   will-change: transform;
-  transition: 0.275s;
+  transition: all 0.275s ease-in-out, visibility 0s 0.275s;
   border-radius: 10px;
 }
 
-.layout-tv .card:focus::after {
+.layout-tv .cardBox {
+  height: 100%;
+  padding: 8px !important;
+}
+
+.layout-tv .card:focus::before {
   transform: translateX(0) !important;
   visibility: visible;
 }
 
-.layout-tv .card:focus ~ .card::after {
+.layout-tv .card:focus ~ .card::before {
   transform: translateX(-100%) !important;
 }
 
-.layout-tv .verticalSection:focus-within ~ .verticalSection .card::after,
-.layout-tv .verticalSection:focus-within ~ .section5 .card::after {
+.layout-tv .verticalSection:focus-within ~ .verticalSection .card::before,
+.layout-tv .verticalSection:focus-within ~ .section5 .card::before {
   transform: translateY(-100%);
 }
 
-.layout-tv .verticalSection:focus-within .card::after {
+.layout-tv .verticalSection:focus-within .card::before {
   transform: translateX(100%);
+}
+
+.layout-tv div[data-role="page"]:not(#itemDetailPage)::after {
+  background: rgb(20, 20, 20);
+  overflow: visible;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .homeLibraryButton,
