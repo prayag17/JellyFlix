@@ -1210,7 +1210,7 @@ label.selectLabel {
   visibility: hidden;
   z-index: 1000;
   will-change: transform;
-  transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+  transition: all 0.275s;
   border-radius: 10px;
 }
 
