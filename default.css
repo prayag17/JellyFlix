@@ -1197,7 +1197,8 @@ label.selectLabel {
 
 .layout-tv .card::before,
 .layout-tv .emby-tab-button::before,
-.layout-tv .paper-icon-button-light::after {
+.layout-tv .paper-icon-button-light::after,
+.layout-tv .listItem::after {
   box-sizing: border-box;
   content: "";
   width: 100%;
@@ -1223,7 +1224,9 @@ label.selectLabel {
 
 .layout-tv .card:focus::before,
 .layout-tv .emby-tab-button:focus::before,
-.layout-tv .paper-icon-button-light:focus::after {
+.layout-tv .paper-icon-button-light:focus::after,
+.layout-tv .listItem:focus::after,
+.layout-tv a.show-focus[is="emby-linkbutton"]:focus > .listItem::after {
   transform: translateX(0) !important;
   visibility: visible;
 }
@@ -1235,7 +1238,12 @@ label.selectLabel {
 }
 
 .layout-tv .verticalSection:focus-within ~ .verticalSection .card::before,
-.layout-tv .verticalSection:focus-within ~ .section5 .card::before {
+.layout-tv .verticalSection:focus-within ~ .section5 .card::before,
+.layout-tv .listItem:focus ~ .listItem::after,
+.layout-tv
+  a.show-focus[is="emby-linkbutton"]:focus
+  ~ a.show-focus[is="emby-linkbutton"]
+  > .listItem::after {
   transform: translateY(-100%);
 }
 
@@ -1246,7 +1254,8 @@ label.selectLabel {
 }
 
 .layout-tv .emby-tab-button:focus,
-.layout-tv .paper-icon-button-light:focus {
+.layout-tv .paper-icon-button-light:focus,
+.layout-tv a.show-focus[is="emby-linkbutton"]:focus {
   transform: none !important;
   background: none !important;
 }
@@ -2069,8 +2078,6 @@ div:not(.paperList) .listItem {
 .layout-tv .listItem:focus {
   transform: none !important;
   background: none !important;
-  border: 5px solid white;
-  border-radius: 10px;
 }
 /* My Media Styling */
 
