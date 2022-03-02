@@ -1255,6 +1255,51 @@ label.selectLabel {
   background-color: #101010 !important;
 }
 
+.layout-tv .vertical-wrap .card::before {
+  transform: none !important;
+  visibility: visible;
+  opacity: 0;
+}
+
+.layout-tv .vertical-wrap .card:focus::before {
+  transform: none !important;
+  opacity: 1;
+}
+
+.layout-tv .vertical-wrap .card:focus ~ .card::before {
+  transform: none !important;
+}
+
+.layout-tv .card[data-type="Actor"] .cardText {
+  position: absolute;
+  background: transparent !important;
+  opacity: 1;
+  width: calc(100% - 10px);
+  padding: 0 5px !important;
+}
+
+.layout-tv .card[data-type="Actor"] .cardText-first {
+  bottom: 31.5px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Actor"] .cardText-secondary {
+  bottom: 8px;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
+}
+
+.layout-tv .card[data-type="Actor"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: inherit;
+  padding-top: 0 !important;
+}
+
+.layout-tv .card[data-type="Actor"] .cardBox {
+  padding: 0 !important;
+}
+
 .itemsContainer.padded-left.padded-right.padded-right-withalphapicker.vertical-wrap {
   padding: 0 !important;
   margin: 0 3.3% !important;
@@ -1508,12 +1553,6 @@ div#divRunningTasks {
 
 .layout-mobile .card[data-type="Actor"] .cardText-first {
   color: white !important;
-}
-
-.card[data-type="Actor"] .cardScalable {
-  overflow: hidden;
-  border-radius: var(--rounding);
-  height: 3rem;
 }
 
 .card[data-type="Actor"] .cardOverlayButton-br {
