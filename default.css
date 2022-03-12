@@ -516,6 +516,7 @@ div#itemDetailPage {
   align-content: flex-end;
   margin-top: 0 !important;
   height: 100vh !important;
+  z-index: 1;
 }
 
 .cardText > .textActionButton {
