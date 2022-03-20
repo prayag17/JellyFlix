@@ -56,6 +56,7 @@ fieldset.verticalSection.verticalSection-extrabottompadding {
 .emby-textarea:focus,
 .emby-select:focus {
   border-color: var(--accent) !important;
+  transform: none !important;
 }
 
 .selectArrowContainer {
@@ -516,6 +517,7 @@ div#itemDetailPage {
   align-content: flex-end;
   margin-top: 0 !important;
   height: 100vh !important;
+  z-index: 1;
 }
 
 .cardText > .textActionButton {
@@ -1198,7 +1200,9 @@ label.selectLabel {
 .layout-tv .card::before,
 .layout-tv .emby-tab-button::before,
 .layout-tv .paper-icon-button-light::after,
-.layout-tv .listItem::after {
+.layout-tv .listItem::after,
+.layout-tv .raised::after,
+.layout-tv #itemDetailPage .emby-button::after {
   box-sizing: border-box;
   content: "";
   width: 100%;
@@ -1217,6 +1221,10 @@ label.selectLabel {
   border-radius: 10px;
 }
 
+.layout-tv .raised::after {
+  transition: transform 0.275s, visiblity 0s 0.275s;
+}
+
 .layout-tv .cardBox {
   height: 100%;
   padding: 8px !important;
@@ -1226,14 +1234,18 @@ label.selectLabel {
 .layout-tv .emby-tab-button:focus::before,
 .layout-tv .paper-icon-button-light:focus::after,
 .layout-tv .listItem:focus::after,
-.layout-tv a.show-focus[is="emby-linkbutton"]:focus > .listItem::after {
+.layout-tv a.show-focus[is="emby-linkbutton"]:focus > .listItem::after,
+.layout-tv .raised:focus::after,
+.layout-tv #itemDetailPage .emby-button:focus::after {
   transform: translateX(0) !important;
   visibility: visible;
 }
 
 .layout-tv .card:focus ~ .card::before,
 .layout-tv .emby-tab-button:focus ~ .emby-tab-button::before,
-.layout-tv .paper-icon-button-light:focus ~ .paper-icon-button-light::after {
+.layout-tv .paper-icon-button-light:focus ~ .paper-icon-button-light::after,
+.layout-tv .raised:focus ~ .raised::after,
+.layout-tv #itemDetailPage .emby-button:focus ~ .emby-button::after {
   transform: translateX(-100%) !important;
 }
 
@@ -1243,21 +1255,33 @@ label.selectLabel {
 .layout-tv
   a.show-focus[is="emby-linkbutton"]:focus
   ~ a.show-focus[is="emby-linkbutton"]
-  > .listItem::after {
+  > .listItem::after,
+.layout-tv .verticalSection:focus-within ~ .verticalSection .raised::after {
   transform: translateY(-100%);
 }
 
 .layout-tv .verticalSection:focus-within .card::before,
 .layout-tv *:focus-within > .emby-tab-button::before,
-.layout-tv *:focus-within > .paper-icon-button-light::after {
+.layout-tv *:focus-within > .paper-icon-button-light::after,
+.layout-tv *:focus-within > .raised::after,
+.layout-tv #itemDetailPage *:focus-within > .emby-button::after {
   transform: translateX(100%);
 }
 
 .layout-tv .emby-tab-button:focus,
 .layout-tv .paper-icon-button-light:focus,
-.layout-tv a.show-focus[is="emby-linkbutton"]:focus {
+.layout-tv .emby-button:focus {
   transform: none !important;
   background: none !important;
+}
+
+.layout-tv a.show-focus[is="emby-linkbutton"]:focus {
+  transform: none !important;
+}
+
+.layout-tv .raised:focus {
+  background: var(--accent) !important;
+  transform: none !important;
 }
 
 .layout-tv div[data-role="page"]:not(#itemDetailPage)::after {
