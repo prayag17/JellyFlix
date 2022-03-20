@@ -520,6 +520,27 @@ div#itemDetailPage {
   z-index: 1;
 }
 
+.layout-mobile .detailPageWrapperContainer > * {
+  z-index: 1;
+}
+
+@media (max-width: 575px) and (min-width: 695px) {
+  .layout-mobile .nameContainer {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 695px) {
+  .layout-mobile .nameContainer {
+    font-size: 2em;
+  }
+  .layout-mobile .infoWrapper.infoText {
+    margin: 0 5vh !important;
+    font-size: 2vh !important;
+    max-width: 50%;
+  }
+}
+
 .cardText > .textActionButton {
   width: 100%;
   height: 100% !important;
