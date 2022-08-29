@@ -2283,3 +2283,7 @@ div:not(.paperList) .listItem {
 .mdl-spinner__circle.mdl-spinner__circleLeft.mdl-spinner__circleLeft-active, .mdl-spinner__circle.mdl-spinner__circleRight.mdl-spinner__circleRight-active {
   border-color: var(--accent);
 }
+
+#div.docspinner.mdl-spinner {
+  border-color: var(--accent);
+}
