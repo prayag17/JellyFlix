@@ -2280,6 +2280,10 @@ div:not(.paperList) .listItem {
   border-color: var(--accent);
 }
 
+.mdl-spinner__circle-clipper.mdl-spinner__right, .mdl-spinner__circle-clipper.mdl-spinner__left {
+  border-color: var(--accent);
+}
+
 .mdl-spinner__circle.mdl.spinner__circleLeft.mdl-spinner__circleLeft-active, .mdl-spinner__circle.mdl.spinner__circleRight.mdl-spinner__circleRight-active {
   border-color: var(--accent);
 }
