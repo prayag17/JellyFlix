@@ -2276,6 +2276,6 @@ div:not(.paperList) .listItem {
 
 /* Spinner */
 
-.mdl-spinner__layer-1 .mdl-spinner__layer-2 .mdl-spinner__layer-3 .mdl-spinner__layer-4 {
+.mdl-spinner__layer-1, .mdl-spinner__layer-2, .mdl-spinner__layer-3, .mdl-spinner__layer-4, {
   border-color: #e50914;
 }
