@@ -2273,3 +2273,9 @@ div:not(.paperList) .listItem {
 .chapterCard .innerCardFooter > .cardText:last-child {
   float: right;
 }
+
+/* Spinner */
+
+.mdl-spinner__layer.mdl-spinner__layer-1.mdl-spinner__layer-1-active, .mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active, .mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active, .mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
+  border-color: var(--accent);
+}
