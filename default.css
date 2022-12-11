@@ -126,7 +126,6 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
 }
 
 .osdControls .flex.flex-direction-row.align-items-center {
-  display: grid;
   grid-template-areas: "one two" "three three";
 }
 
