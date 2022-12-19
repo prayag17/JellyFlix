@@ -7,4 +7,5 @@
 <h2>Usage:</h2>
 <h3> To use it, got to Setting ==> Dashboard ==> General and scroll down to custom css and paste the following line</h3>
 
-This does not have a url link to import it so you need to fix that yourself
+if you need you can use my link or you fix your own 
+@import url("https://cdn.munker.se/jellyfin/style.css");
