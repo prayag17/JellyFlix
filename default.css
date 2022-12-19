@@ -1,9 +1,10 @@
 /*Variables*/
 
+
 :root {
-  --deftraback: rgba(229, 9, 20, 0.2) !important;
+  --deftraback: rgb(102 52 153 / 36%) !important;
   --rounding: 3px;
-  --accent: #e50914;
+  --accent: #663399;
 }
 
 /*Highlight*/
@@ -111,18 +112,13 @@ span.material-icons.checkboxIcon.checkboxIcon-checked.check {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
 }
 
-.skinHeader-withBackground.osdHeader {
-  transition: opacity 0.3s ease-out;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.75),
-    transparent
-  ) !important;
-  color: #eee;
-  height: 7.5em;
-  pointer-events: none;
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .osdControls .flex.flex-direction-row.align-items-center {
@@ -677,7 +673,7 @@ div#loginPage {
 
 .layout-mobile #loginPage {
   background: linear-gradient(to left, #000000bf, #000000bf),
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/9f09b85f-530e-4090-82c3-a60ea2b3177f/US-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+    url(https://play.hbomax.com/390f9937ad43fc0e763143a8fcd3fb0a.png) !important;
   background-size: cover !important;
 }
 
@@ -700,7 +696,7 @@ div#loginPage {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 20%),
     linear-gradient(to left, rgba(0, 0, 0, 0.75), transparent 20%),
     linear-gradient(to right, rgba(0, 0, 0, 0.75), transparent 20%),
-    url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/9f09b85f-530e-4090-82c3-a60ea2b3177f/US-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+    url(https://play.hbomax.com/390f9937ad43fc0e763143a8fcd3fb0a.png) !important;
   background-size: cover !important;
 }
 
@@ -1735,13 +1731,19 @@ h2 {
 }
 
 .backgroundContainer.withBackdrop {
-  opacity: 1;
-  z-index: -1;
-  background-color: rgb(20, 20, 20);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('https://play.hbomax.com/390f9937ad43fc0e763143a8fcd3fb0a.png');
+  filter: blur(10px);
+  background-size: cover;
 }
 
+
+
 .backgroundContainer {
-  background-color: rgb(20, 20, 20) !important;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('https://play.hbomax.com/390f9937ad43fc0e763143a8fcd3fb0a.png');
+  filter: blur(10px);
+  background-size: cover;
 }
 
 /*Rounded corners and square hover buttons*/
@@ -1774,32 +1776,8 @@ h2 {
 
 /* Top menu transparency */
 
-.skinHeader {
-  background: linear-gradient(
-    to bottom,
-    rgb(5, 5, 5),
-    rgb(20, 20, 20)
-  ) !important;
-}
 
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent {
-  background: linear-gradient(
-    to bottom,
-    rgb(20, 20, 20),
-    transparent
-  ) !important;
-  box-shadow: none !important;
-  transform: none !important;
-}
 
-body:not(.withSectionTabs) > .skinHeader {
-  background: linear-gradient(
-    to bottom,
-    rgba(20, 20, 20),
-    transparent
-  ) !important;
-  transform: none !important;
-}
 
 .upNextDialog {
   box-shadow: 0 0 8px 5px black;
@@ -2272,13 +2250,4 @@ div:not(.paperList) .listItem {
 
 .chapterCard .innerCardFooter > .cardText:last-child {
   float: right;
-}
-
-/* Spinner */
-
-.mdl-spinner__layer.mdl-spinner__layer-1.mdl-spinner__layer-1-active,
-.mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active, 
-.mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active, 
-.mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
-  border-color: var(--accent);
 }
