@@ -391,7 +391,7 @@ div#itemDetailPage {
 .layout-mobile .detailPagePrimaryContainer {
   z-index: -1;
   background: transparent !important;
-  height: 100vh !important;
+  height: 50vh !important;
   width: 100vw !important;
   padding: 0 !important;
 }
