@@ -516,7 +516,7 @@ div#itemDetailPage {
   justify-content: flex-start;
   align-content: flex-end;
   margin-top: 0 !important;
-  height: 100vh !important;
+  height: 55vh !important;
   z-index: 1;
 }
 
