@@ -218,7 +218,7 @@ div#itemDetailPage {
   position: relative;
   width: 60vw;
   background: transparent;
-  min-height: 70vh;
+  min-height: 25vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
