@@ -8,3 +8,4 @@
 <h3> To use it, got to Setting ==> Dashboard ==> General and scroll down to custom css and paste the following line</h3>
 
 @import url("https://cdn.jsdelivr.net/gh/itschalee/hbomax-jellyfin@hbo/default.css");
+<img src="/img/Ska%CC%88rmavbild%202023-04-28%20kl.%2009.18.06.png" alt="Alt text" title="Optional title">
