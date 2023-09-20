@@ -2281,3 +2281,6 @@ div:not(.paperList) .listItem {
 .mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
   border-color: var(--accent);
 }
+.programContainer.emby-scroller {
+    overflow: auto!important;
+}
