@@ -207,9 +207,7 @@ div#itemBackdrop::after {
   background: transparent;
 }
 
-div#itemDetailPage {
-  background: rgb(20, 20, 20);
-}
+
 
 .detailPagePrimaryContent {
   position: relative;
